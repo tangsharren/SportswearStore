@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Tang Sharren
+        
+            Filename: privacy.html
+        
+        -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Privacy Policy</title>
+    <!---------favicon-------->
+    <link rel="shortcut icon" type="image/x-ico" href="small-logo.ico"/>
+    <!----------External css-->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/faqs_privacy.css" rel="stylesheet" type="text/css">
+    <link href="css/Header.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/livechat.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <!-----------------------header part--------------------------------->
+     <!----header part------->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Tan Chen Xun
+        
+            Part name: Header
+        
+        -->
+        <!----Start of header------>
+        <header>
+            <div id=top-nav-container>
+                <div id="top-navigation">
+                    <button class="mobile-item"><img id="click-menu" class="mobile-item" onclick="dropfunction()" src="images/Header/menu.png" height="20px" width="20px"></button>
+                    <a href="Home.html"id="logo-top"><img src="images/Header/logo-2.png" alt=logo height="45px" width="60px"></a>
+                    <input type="checkbox" id="show-searchholder">
+                    <label for="show-searchholder" class="mobile-item"><img src="images/Header/search.png" alt="search" height="20px" width=20px /></label>
+                    <div id="searchholder"  onclick="display_search()">
+                        <input type="text" id="search_contain"  onkeyup="search_product()" placeholder="Search..">
+                        <img src="images/Header/search.png" alt="search" height="20px" width=20px />
+                        <ul id="search_list">
+                            <h3>Popular Searches</h3>
+                            <li><a href="men_running.html">Man Running Shoes</a></li>
+                            <li><a href="women_basketball.html">Woman Basketball Shoes</a></li>
+                            <li><a href="men_badminton.html">Man Badminton Shoes</a></li>
+                            <li><a href="women_running.html">Woman Running Shoes</a></li>
+                            <li><a href="men_basketball.html">Man Basketball Shoes</a></li>
+                            <li><a href="new arrivals.html">New Arrivals</a></li>
+                            <li><a href="clearance.html">Clearance</a></li>
+                            <li><a href="women_badminton.html">Woman Badminton Shoes</a></li>
+                            <li><a href="women_lifestyle.html">Woman Lifestyle Shies</a></li>
+                            <li><a href="equipment-sec1.html">Ball</a></li>
+                            <li><a href="equipment-sec2.html">Body building</a></li>
+                            <li><a href="equipment-sec3.html">Yoga</a></li>
+                            <li><a href="men_lifestyle.html">Men Lifestyle Shoes</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <nav class="desktop-item" id="horizontal-nav">
+                        <ul>
+                            <li><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="Wishlist2.html">Wishlist<img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html">Cart<img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                    
+                    <nav class="mobile-item" id="horizontal-nav2">
+                        <ul>
+                            <li><a href="Wishlist2.html"><img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html"><img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <section id="sec-nav">
+                <section id="nav-table">
+                    <ul id="menu">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="new arrivals.html">New Arrivals</a></li>
+                        <li><a href="footwear1.html" class="desktop-item submenuTitle">Footwear<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></a>
+                            <input type="checkbox" id="show-submenu">
+                            <label for="show-submenu" class="mobile-item label-text"><a href="footwear1.html">Footwear</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                                <ul class="submenu" id="submenu-1">
+                                    <li><span class="desktop-item submenu-2Title">Man</span>
+                                        <input type="checkbox" id="show-submenu-1-2-1">
+                                        <label for="show-submenu-1-2-1" class="mobile-item label-text" style="padding-left: 5%;">Man<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-1">
+                                            <li id="running-man"><a href="men_running.html">Running</a></li>
+                                            <li id="lifestyle-man"><a href="men_lifestyle.html" id="life-style-man">Lifestyle</a></li>
+                                            <li id="training-man"><a href="men_badminton.html" id="training-man">Badminton</a></li>
+                                            <li id="basketball-man"><a href="men_basketball.html" id="basketball-man">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><span class="desktop-item submenu-2Title">Woman</span>
+                                        <input type="checkbox" id="show-submenu-1-2-2">
+                                        <label for="show-submenu-1-2-2" class="mobile-item label-text" style="padding-left: 5%;">Woman<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-2">
+                                            <li id="running-woman"><a href="women_running.html">Running</a></li>
+                                            <li id="lifestyle-woman"><a href="women_lifestyle.html">Lifestyle</a></li>
+                                            <li id="training-woman"><a href="women_badminton.html">Badminton</a></li>
+                                            <li id="basketball-woman"><a href="women_basketball.html">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li><a href="equipment.html" class="desktop-item submenuTitle">Equipment<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-2">
+                            <label for="show-submenu-2" class="mobile-item label-text"><a href="equipment.html">Equipment</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-2">
+                                <li><a href="equipment-sec1.html">Ball</a></li>
+                                <li><a href="equipment-sec3.html">Body Building</a></li>
+                                <li><a href="equipment-sec2.html">Yoga</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Apparel.html" class="desktop-item submenuTitle">Apparel<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-3">
+                            <label for="show-submenu-3" class="mobile-item label-text"><a href="Apparel.html">Apparel</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-3">
+                                <li id="apparel-man"><a href="#" class="desktop-item submenu-2Title">Man<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-1">
+                                    <label for="show-submenu-3-1" class="mobile-item label-text"><a href="#">Man</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-1">
+                                        <li id="man-shirt"><a href="Man_tops.html">Man Tops</a></li>
+                                        <li id="man-pants"><a href="Man-bottoms.html" id="life-style-man">Man Bottoms</a></li>
+                                    </ul>
+                                </li>
+                                <li id="apparel-woman"><a href="#" class="desktop-item submenu-2Title" >Woman<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-2">
+                                    <label for="show-submenu-3-2" class="mobile-item label-text"><a href="#">Woman</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-2">
+                                        <li id="woman-shirt"><a href="Woman_tops.html">Woman Tops</a></li>
+                                        <li id="woman-pants"><a href="Woman-bottoms.html">Woman Bottoms</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Accessories.html" id="submenuTitle">Accessories</a></li>
+                        <li><a href="clearance.html">Clearance</a></li>
+                        <li class="mobile-item"><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                        <li class="mobile-item"><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                    </ul>
+                </section>
+            </section>
+        </header>
+        <!--end of header-->
+        <!---buton to go top----->
+        <button id="ArrowBtn" onclick="topFunction()"><img src="images/Header/top.png" height=30px width=30px/></button>
+        <!---buton to go top----->
+        <!--livechat-->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Wong Yann Yiee
+        
+            Part name: livechat
+        
+        -->
+        <button class="popup_button">
+
+            <img src="images/Live-chat/popup_img.png" alt="popup" class="image_popup"  onclick="openForm()">
+         </button> 
+         <!--text form area-->
+         <div class="my_form" id="Form">
+             
+            <div class="chat-head" >
+                 <p style="font-size: larger;">Chat with us </p>
+                 <p>Helping you is our responsibility</p>
+                 <img src="images/Live-chat/close_form_icon.png" alt="close" class="close_form_icon" onclick="closeForm()">
+            </div>
+             
+             <!--container for setted question-->
+             <form id="form_container" >
+                 
+                
+                 <div class="textbox">
+                       <div class="quest" >How to start shopping ?</div>
+                       <div class="quest" >How to create an account ? </div>
+                       <div class="quest" > What delivery method is used ? </div>
+                 </div>
+       
+             </form>
+            
+             <!--container for user enter message area -->
+             <div class="message_container">
+                 
+                 <div class="input_msg">
+                    <input type="text"  placeholder="Type your message..." id="send_msg">
+                   
+                    <img src="images/Live-chat/send_button_icon.png" class="send_icon" width="15%">
+                   
+                 </div>
+     
+                 
+             </div>
+            </div>
+             <script src="mechine_livechat.js"></script> 
+        <!--livechat-->
+        <!----------------Start content------->
+    <!-----------------------content--------------------------------->
+<main onclick="hide_search()">
+    <div class="main-container privacy">
+        <div class="main-title">
+            <h1>Privacy Policy</h1>
+        </div>
+        <div class="main-content">
+            <div class="main-innercontainer">
+                <button class="collapsible">1. Personal Data</button>
+                <div class="content">
+                    <p>
+                        Personal data shall have the same meaning accorded under the Personal Data Protection Act 2010 of 
+                        Malaysia. Personal data is any personal information from which an individual would be identifiable, 
+                        and it includes information such as name, date of birth, email address, telephone number, NRIC or 
+                        passport number, address, credit card information et cetera (hereinafter referred to as “Personal 
+                        Data”).
+                    </p>
+                </div>
+                <button class="collapsible">2. Collection of Personal Data</button>
+                <div class="content">
+                    <ol>
+                        <li>
+                            In accordance with the principles of the PDPA, we will notify you of the purposes and obtain your
+                            consent for the collection of your Personal Data, unless an exception under the law permits us to 
+                            collect and process your Personal Data without your consent.
+                        </li>
+                        <li>
+                            We collect Personal Data when:
+                            <ol type="a">
+                                <li>you make purchases in store or online;</li>
+                                <li>you set up an account on our Platform or subscribe to our membership;
+                                </li>
+                                <li>you contact our customer relations center, either online, in store or
+                                    through the phone;</li>
+                                <li>you agree to participate in a sports event, customer contest,
+                                    competition, survey, interview or product testing;</li>
+                                <li>you register to participate in activities organized in store or through
+                                    the Platform;</li>
+                                <li>you upload content on the Platform;</li>
+                                <li>you conduct certain types of transactions, such as an application for a
+                                    refund;</li>
+                                <li>you use certain services, such as racket services or workshop services;
+                                </li>
+                                <li>you apply for a job online or in store;</li>
+                                <li>you provide feedback or complaints in relation to our products or our
+                                    services either online, in store or through the phone.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            You can browse our Platform without sharing your personal data with us and remain anonymous. 
+                            However, where it is indicated that it is mandatory for you to provide your Personal Data to us, 
+                            failure to provide such information may result in you not being able to access and use certain 
+                            features of the Site.
+                        </li>
+                        <li>
+                            You acknowledge that you provide your Personal Data to us voluntarily. If you provide Personal 
+                            Data of your dependant(s) to us, you warrant that you are legally authorised to do so.
+                        </li>
+                    </ol>
+                </div>
+                <button class="collapsible">3. Use and Processing of Personal Data</button>
+                <div class="content">
+                    <ol>
+                        <li>Personal Data collected may be used for various purposes (collectively, the
+                            “<b>Purposes</b>”), including but not limited to:<ol type="a">
+                                <li>responding to your queries and communicating with you so as to better
+                                    address your needs;</li>
+                                <li>communicating with you and sending you information which we think may be
+                                    of interest to you;</li>
+                                <li>enabling you to use the Platform;</li>
+                                <li>managing your orders and payment online, the subsequent home delivery or
+                                    self-collection of products as well as exchanges or returns of products,
+                                    if applicable;</li>
+                                <li>identify you as a Decathlon member so as to allow you to benefit from
+                                    the membership program;</li>
+                                <li>enabling you to register yourself or your dependent(s) for activities or
+                                    events organized by us;</li>
+                                <li>management of marketing communication in relation to our products,
+                                    services, promotion, stores or Platform;</li>
+                                <li>management of customer reviews on products;</li>
+                                <li>facilitating your participation in our organization of sports event,
+                                    customer contests, competitions, surveys, interviews or product tests;
+                                </li>
+                                <li>conduct market research or surveys, marketing analysis, customer
+                                    profiling activities, analysis of customer choices, statistical and
+                                    trend analysis in relation to our products and/or services;</li>
+                                <li>management of after sales services, such as enabling us to contact you
+                                    in the event of any defective components, or to offer workshop services
+                                    or to contact you in the event of product recalls;</li>
+                                <li>contacting you about functionality changes to our Platform;</li>
+                                <li>enable us to comply with obligations under laws or regulations or to
+                                    assist in investigations by the authorities;</li>
+                                <li>prevent fraudulent or illegal activities, and enforce our Terms and
+                                    Conditions of Use;</li>
+                                <li>develop, maintain and improve our services.</li>
+                            </ol>
+                        </li>
+                        <li>By providing your Personal Data to us, you consent to us processing your
+                            Personal Data in accordance with this Privacy Policy, and you confirm that all
+                            Personal Data provided by you is accurate and complete, and that none of it is
+                            misleading or out of date. You will promptly update us in the event of any
+                            change to your Personal Data.</li>
+                    </ol>                    
+                </div>
+                <button class="collapsible">4. Protection and Security of Personal Data</button>
+                <div class="content">
+                    <ol>
+                        <li>We take all the necessary precautions to ensure the confidentiality of your
+                            personal data. We have the necessary technical and organizational measures in
+                            place to safeguard the personal data that you provide and to prevent its
+                            disclosure to unauthorized third parties. Such measures include the use of
+                            encryption where personal data is entered on our Platform as well as limited
+                            access to your personal data.</li>
+                        <li>Transfer of Data outside of Malaysia
+                            <p>As we may outsource some of our data processing, your personal data may be
+                                transferred to, accessed in and stored at a destination outside Malaysia.
+                                Where such a transfer occurs, we ask that the third parties provide
+                                sufficient guarantees to implement appropriate and adequate technical and
+                                organizational measures to such a degree that will ensure the security and
+                                protection of your personal data.</p>
+                            <p>By using the Platform, you hereby expressly consent to the transfer of your
+                                personal data outside of Malaysia.</p>
+                        </li>
+                        <li>In the unlikely event that we believe that the security of your personal data
+                            has been compromised, we may seek to notify you of that development. If we have
+                            your email address, we may notify you by email. By using the Platform, you
+                            consent to our use of email as a means of such notification.</li>
+                    </ol>
+                </div>
+            
+            </div>       
+        </div>
+    </div>
+</main>
+    <!-----------------------content--------------------------------->
+    <!---External javascript------>
+    <script src="Header.js"></script>
+    <script src="main_cart.js"></script>
+    <script src="collapsible.js"></script>
+    <!---External javascript------>
+   <!----------------------------footer-------------------------->  
+   <footer>
+    <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Tang Sharren
+        
+            Part name: Footer
+        
+        -->
+        <a href="home.html">
+            <img src="images/Footer/logo-1.png" style="height: 100px; padding: 20px 0px 20px 45px; "  >
+        </a>
+        <div>
+        <div class=footer-content>
+            <ul>
+                <li class=footer-title>Discover</li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="feedback.html">Contact Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+        <div class=footer-content>
+            <ul>
+                <li class=footer-title>Support</li>
+                <li><a href="delivery.html">Product Delivery</a></li>
+                <li><a href="review.html">Customer Review</a></li>
+                <li><a href="return.html">Return & Refund</a></li>
+            </ul>
+        </div>
+        <div class=footer-content>
+            <ul>
+                <li class=footer-title>More</li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="terms.html">Terms & Condition</a></li>
+                <li><a href="privacy.html">Privacy policy</a></li>
+            </ul>
+        </div>
+        <div class=footer-content>
+            <ul>
+                <li class=footer-title>Payment</li>
+                <li><img src="images/Footer/logo-2-mastercard.png"><img src="images/Footer/visa-logo.png"><img src="images/Footer/fpx-logo.png"></li>
+                <li><img src="images/Footer/logo-4-boost.png"><img src="images/Footer/logo-5-tng.png"><img src="images/Footer/logo-6-grab.png"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+        &copy;2021 Deportes &trade;. All rights reserved.
+    </div>
+    </footer>
+
+</body>
+</html>

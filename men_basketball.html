@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+
+        BAIT1023 WEB DESIGN AND DEVELOPMENT        
+        Assignment
+
+        Author:Wong Yann Yiee
+
+        Filename: men_badminton.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear/men/basketball</title>
+    <!---------favicon-------->
+    <link rel="shortcut icon" type="image/x-ico" href="small-logo.ico"/>
+    <!----------External css-->
+   <link href="css/reset.css" rel="stylesheet" type="text/css" />
+   <link href="css/Header.css" rel="stylesheet" type="text/css" />
+   <link href="css/product.css" rel="stylesheet" type="text/css" />
+   <link href="css/footer.css" rel="stylesheet" type="text/css" >
+   <link href="css/livechat.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!----header part------->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Tan Chen Xun
+        
+            Part name: Header
+        
+        -->
+        <!----Start of header------>
+        <header>
+            <div id=top-nav-container>
+                <div id="top-navigation">
+                    <button class="mobile-item"><img id="click-menu" class="mobile-item" onclick="dropfunction()" src="images/Header/menu.png" height="20px" width="20px"></button>
+                    <a href="Home.html"id="logo-top"><img src="images/Header/logo-2.png" alt=logo height="45px" width="60px"></a>
+                    <input type="checkbox" id="show-searchholder">
+                    <label for="show-searchholder" class="mobile-item"><img src="images/Header/search.png" alt="search" height="20px" width=20px /></label>
+                    <div id="searchholder"  onclick="display_search()">
+                        <input type="text" id="search_contain"  onkeyup="search_product()" placeholder="Search..">
+                        <img src="images/Header/search.png" alt="search" height="20px" width=20px />
+                        <ul id="search_list">
+                            <h3>Popular Searches</h3>
+                            <li><a href="men_running.html">Man Running Shoes</a></li>
+                            <li><a href="women_basketball.html">Woman Basketball Shoes</a></li>
+                            <li><a href="men_badminton.html">Man Badminton Shoes</a></li>
+                            <li><a href="women_running.html">Woman Running Shoes</a></li>
+                            <li><a href="men_basketball.html">Man Basketball Shoes</a></li>
+                            <li><a href="new arrivals.html">New Arrivals</a></li>
+                            <li><a href="clearance.html">Clearance</a></li>
+                            <li><a href="women_badminton.html">Woman Badminton Shoes</a></li>
+                            <li><a href="women_lifestyle.html">Woman Lifestyle Shies</a></li>
+                            <li><a href="equipment-sec1.html">Ball</a></li>
+                            <li><a href="equipment-sec2.html">Body building</a></li>
+                            <li><a href="equipment-sec3.html">Yoga</a></li>
+                            <li><a href="men_lifestyle.html">Men Lifestyle Shoes</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <nav class="desktop-item" id="horizontal-nav">
+                        <ul>
+                            <li><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="Wishlist2.html">Wishlist<img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html">Cart<img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                    
+                    <nav class="mobile-item" id="horizontal-nav2">
+                        <ul>
+                            <li><a href="Wishlist2.html"><img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html"><img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <section id="sec-nav">
+                <section id="nav-table">
+                    <ul id="menu">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="new arrivals.html">New Arrivals</a></li>
+                        <li><a href="footwear1.html" class="desktop-item submenuTitle">Footwear<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></a>
+                            <input type="checkbox" id="show-submenu">
+                            <label for="show-submenu" class="mobile-item label-text"><a href="footwear1.html">Footwear</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                                <ul class="submenu" id="submenu-1">
+                                    <li><span class="desktop-item submenu-2Title">Man</span>
+                                        <input type="checkbox" id="show-submenu-1-2-1">
+                                        <label for="show-submenu-1-2-1" class="mobile-item label-text" style="padding-left: 5%;">Man<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-1">
+                                            <li id="running-man"><a href="men_running.html">Running</a></li>
+                                            <li id="lifestyle-man"><a href="men_lifestyle.html" id="life-style-man">Lifestyle</a></li>
+                                            <li id="training-man"><a href="men_badminton.html" id="training-man">Badminton</a></li>
+                                            <li id="basketball-man"><a href="men_basketball.html" id="basketball-man">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><span class="desktop-item submenu-2Title">Woman</span>
+                                        <input type="checkbox" id="show-submenu-1-2-2">
+                                        <label for="show-submenu-1-2-2" class="mobile-item label-text" style="padding-left: 5%;">Woman<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-2">
+                                            <li id="running-woman"><a href="women_running.html">Running</a></li>
+                                            <li id="lifestyle-woman"><a href="women_lifestyle.html">Lifestyle</a></li>
+                                            <li id="training-woman"><a href="women_badminton.html">Badminton</a></li>
+                                            <li id="basketball-woman"><a href="women_basketball.html">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li><a href="equipment.html" class="desktop-item submenuTitle">Equipment<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-2">
+                            <label for="show-submenu-2" class="mobile-item label-text"><a href="equipment.html">Equipment</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-2">
+                                <li><a href="equipment-sec1.html">Ball</a></li>
+                                <li><a href="equipment-sec3.html">Body Building</a></li>
+                                <li><a href="equipment-sec2.html">Yoga</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Apparel.html" class="desktop-item submenuTitle">Apparel<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-3">
+                            <label for="show-submenu-3" class="mobile-item label-text"><a href="Apparel.html">Apparel</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-3">
+                                <li id="apparel-man"><a href="#" class="desktop-item submenu-2Title">Man<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-1">
+                                    <label for="show-submenu-3-1" class="mobile-item label-text"><a href="#">Man</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-1">
+                                        <li id="man-shirt"><a href="Man_tops.html">Man Tops</a></li>
+                                        <li id="man-pants"><a href="Man-bottoms.html" id="life-style-man">Man Bottoms</a></li>
+                                    </ul>
+                                </li>
+                                <li id="apparel-woman"><a href="#" class="desktop-item submenu-2Title" >Woman<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-2">
+                                    <label for="show-submenu-3-2" class="mobile-item label-text"><a href="#">Woman</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-2">
+                                        <li id="woman-shirt"><a href="Woman_tops.html">Woman Tops</a></li>
+                                        <li id="woman-pants"><a href="Woman-bottoms.html">Woman Bottoms</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Accessories.html" id="submenuTitle">Accessories</a></li>
+                        <li><a href="clearance.html">Clearance</a></li>
+                        <li class="mobile-item"><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                        <li class="mobile-item"><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                    </ul>
+                </section>
+            </section>
+        </header>
+        <!--end of header-->
+        <!---buton to go top----->
+        <button id="ArrowBtn" onclick="topFunction()"><img src="images/Header/top.png" height=30px width=30px/></button>
+        <!---buton to go top----->
+        <!--livechat-->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Wong Yann Yiee
+        
+            Part name: livechat
+        
+        -->
+        <button class="popup_button">
+
+            <img src="images/Live-chat/popup_img.png" alt="popup" class="image_popup"  onclick="openForm()">
+         </button> 
+         <!--text form area-->
+         <div class="my_form" id="Form">
+             
+            <div class="chat-head" >
+                 <p style="font-size: larger;">Chat with us </p>
+                 <p>Helping you is our responsibility</p>
+                 <img src="images/Live-chat/close_form_icon.png" alt="close" class="close_form_icon" onclick="closeForm()">
+            </div>
+             
+             <!--container for setted question-->
+             <form id="form_container" >
+                 
+                
+                 <div class="textbox">
+                       <div class="quest" >How to start shopping ?</div>
+                       <div class="quest" >How to create an account ? </div>
+                       <div class="quest" > What delivery method is used ? </div>
+                 </div>
+       
+             </form>
+            
+             <!--container for user enter message area -->
+             <div class="message_container">
+                 
+                 <div class="input_msg">
+                    <input type="text"  placeholder="Type your message..." id="send_msg">
+                   
+                    <img src="images/Live-chat/send_button_icon.png" class="send_icon" width="15%">
+                   
+                 </div>
+     
+                 
+             </div>
+            </div>
+             <script src="mechine_livechat.js"></script> 
+        <!--livechat-->
+        <!----------------Start content------->
+<main onclick="hide_search()">
+<h1>
+    Footwear-men-basketball
+</h1>
+<div class="product_menu">    
+  <!------------------first row  image block 1---------------------->
+    <div class="img-1-1">
+        
+         
+     <img src="images/Footwear/men_basketball1.png" alt="men_basketball" width="350px" height="350px"
+      onmouseover="this.src='images/Footwear/men_basketball1-1.png'" onmouseout="this.src='images/Footwear/men_basketball1.png'"/>
+    
+       <p id="cap_new">Men Footwear</p><br />
+       <p class="item_name">AIR JORDAN 11 WMNS
+         </p>
+        <p class="item_price"> RM899.00</p>
+       
+       
+      <!------------heart-wishlist---------->
+       <label class="like">
+         <input type="checkbox"/>
+         <div class="hearth"></div>
+       </label>
+     <!------------heart-wishlist---------->
+     <div class="custom-select"> 
+        <br/>
+        <select>
+        <option selected disabled>Choose a size</option>
+               
+        <option value="">UK 6</option>
+        <option value="">UK 6.5</option>
+        <option value="">UK 7</option>
+        <option value="">UK 7.5</option>
+        <option value="">UK 8</option>
+        <option value="">UK 8.5</option>
+            
+        </select>
+    </div>
+    <br />
+    <br />
+    <div class="bn54">
+        <button class="cart_btn"><span class="bn54span">Add to cart</span></button>
+       
+    </div>
+           
+           
+        
+        <br />
+    </div>
+   <!------------------first row  image block 1---------------------->
+
+   <!------------------first row  image block 2---------------------->
+    <div class="img-1-2">
+        
+        <img src="images/Footwear/men_basketball2.png" alt="men_basketball" width="350px" height="350px"
+      onmouseover="this.src='images/Footwear/men_basketball2-1.png'" onmouseout="this.src='images/Footwear/men_basketball2.png'"/>
+        <p id="cap_new">Men Footwear</p><br />
+        <p class="item_name">AIR JORDAN 1 RETRO HIGH OG
+           </p>
+        <p class="item_price">RM1850.00</p>
+      
+        <!------------heart-wishlist---------->
+          <label class="like">
+            <input type="checkbox"/>
+            <div class="hearth"></div>
+          </label>
+        <!------------heart-wishlist---------->
+    <div class="custom-select"> 
+            <br />
+        <select>
+            <option selected disabled>Choose a size</option>
+                   
+            
+            <option value="">UK 5.5</option>
+            <option value="">UK 6.5</option>
+            <option value="">UK 7</option>
+            <option value="">UK 7.5</option>
+                
+        </select>
+    </div>
+        <br />
+        <br />
+        <div class="bn54">
+            <button class="cart_btn"><span class="bn54span">Add to cart</span></button>
+    
+        </div>
+           
+           
+         
+         <br />
+    </div>
+    <!------------------first row  image block 2---------------------->
+
+    <!------------------first row  image block 3---------------------->
+    <div class="img-1-3">
+        <img src="images/Footwear/men_basketball3.png" alt="basketball_men" width="350px" height="350px"
+        onmouseover="this.src='images/Footwear/men_basketball3-1.png'" onmouseout="this.src='images/Footwear/men_basketball3.png'"/>
+        <p id="cap_new">Men Footwear</p><br />
+        <p class="item_name">Nike Air Zoom Crossover
+            Older Kids'</p>
+        <p class="item_price">RM259.00</p>
+        <span class="new new_2 ">BEST</span>
+             <!------------heart-wishlist---------->
+             <label class="like">
+                <input type="checkbox"/>
+                <div class="hearth"></div>
+              </label>
+            <!------------heart-wishlist---------->
+        <div class="custom-select"> 
+                <br />
+            <select>
+                <option selected disabled>Choose a size</option>
+                       
+                <option value="">UK 7.5</option>
+                <option value="">UK 8</option>
+                <option value="">UK 8.5</option>
+                
+            </select>
+        </div>
+            <br />
+            <br />
+            <div class="bn54">
+                <button class="cart_btn" ><span class="bn54span">Add to cart</span></button>
+               
+            </div>
+               
+               
+             
+             <br />
+    </div>
+    <!------------------first row  image block 3---------------------->
+
+    <!------------------second row  image block 1---------------------->
+    <div class="img-2-1">
+        <img src="images/Footwear/men_basketball4.png" alt="basketball_men" width="350px" height="350px"
+        onmouseover="this.src='images/Footwear/men_basketball4-1.png'" onmouseout="this.src='images/Footwear/men_basketball4.png'"/>
+        <p id="cap_new">Men Footwear</p><br />
+        <p class="item_name">KD14 EP Basketball Shoes</p>
+        <p class="item_price">RM630.00</p>
+         
+              <!------------heart-wishlist---------->
+              <label class="like">
+                <input type="checkbox"/>
+                <div class="hearth"></div>
+              </label>
+            <!------------heart-wishlist---------->
+        <div class="custom-select"> 
+                <br />
+            <select>
+                <option selected disabled>Choose a size</option>
+                       
+                <option value="">UK 5</option>
+                <option value="">UK 6</option>
+                <option value="">UK 7</option>      
+            </select>
+        </div>
+            <br />
+            <br />
+            <div class="bn54">
+                <button class="cart_btn" ><span class="bn54span">Add to cart</span></button>
+              
+            </div>
+               
+               
+            
+             <br />
+    </div>
+    <!------------------second row  image block 1---------------------->
+
+    <!------------------second row  image block 2---------------------->
+    <div class="img-2-2">
+        <img src="images/Footwear/men_basketball5.png" alt="basketball_men" width="350px" height="350px"
+        onmouseover="this.src='images/Footwear/men_basketball5-1.png'" onmouseout="this.src='images/Footwear/men_basketball5.png'"/>
+        <p id="cap_new">Men Footwear</p><br />
+        <p class="item_name">LI-NING TOKYO EDITION MEN SAGA </p>
+        <p class="item_price"> RM399.00</p>
+        
+              <!------------heart-wishlist---------->
+              <label class="like">
+                <input type="checkbox"/>
+                <div class="hearth"></div>
+              </label>
+            <!------------heart-wishlist---------->
+        <div class="custom-select"> 
+                <br />
+            <select>
+                <option selected disabled>Choose a size</option>
+                   
+                <option value="">UK 4</option>
+                <option value="">UK 5</option>
+                <option value="">UK 6</option>     
+            </select>
+        </div>
+            <br />
+            <br />
+            <div class="bn54">
+                <button class="cart_btn" ><span class="bn54span">Add to cart</span></button>
+            
+            </div>
+               
+                           
+             <br />
+    </div>
+    <!------------------second row  image block 2---------------------->
+
+    <!------------------second row  image block 3---------------------->
+    <div class="img-2-3">
+        <img src="images/Footwear/men_basketball6.png" alt="basketball_men" width="350px" height="350px"
+        onmouseover="this.src='images/Footwear/men_basketball6-1.png'" onmouseout="this.src='images/Footwear/men_basketball6.png'"/>
+        <p id="cap_new">Men Footwear</p><br />
+        <p class="item_name">PG 5 EP Basketball Shoes</p>
+        <p class="item_price"> RM649.00</p>
+        
+              <!------------heart-wishlist---------->
+              <label class="like">
+                <input type="checkbox"/>
+                <div class="hearth"></div>
+              </label>
+            <!------------heart-wishlist---------->
+        <div class="custom-select"> 
+                <br />
+            <select>
+                <option selected disabled>Choose a size</option>
+               
+                <option value="">UK 6</option>
+                <option value="">UK 7</option>
+                <option value="">UK 8</option>
+                
+            </select>
+        </div>
+            <br />
+            <br />
+            <div class="bn54">
+                <button class="cart_btn" ><span class="bn54span">Add to cart</span></button>
+               
+            </div>            
+             <br />
+    </div>
+</div>
+</main>
+         <!---External javascript------>
+         <script src="Header.js"></script>
+         <script src="main_cart.js"></script>
+         <!---External javascript------>
+     <!------Start of footer------->
+     <!----------------------------footer-------------------------->  
+     <footer>
+         <!--
+         
+                 BAIT1023 WEB DESIGN AND DEVELOPMENT        
+                 Assignment
+         
+                 Author: Sharren
+             
+                 Part name: Footer
+             
+             -->
+             <a href="home.html">
+                 <img src="images/Footer/logo-1.png" style="height: 100px; padding: 20px 0px 20px 45px; "  >
+             </a>
+             <div>
+             <div class=footer-content>
+                 <ul>
+                     <li class=footer-title>Discover</li>
+                     <li><a href="About.html">About Us</a></li>
+                     <li><a href="feedback.html">Contact Us</a></li>
+                     <li><a href="faqs.html">FAQs</a></li>
+                 </ul>
+             </div>
+             <div class=footer-content>
+                 <ul>
+                     <li class=footer-title>Support</li>
+                     <li><a href="delivery.html">Product Delivery</a></li>
+                     <li><a href="review.html">Customer Review</a></li>
+                     <li><a href="return.html">Return & Refund</a></li>
+                 </ul>
+             </div>
+             <div class=footer-content>
+                 <ul>
+                     <li class=footer-title>More</li>
+                     <li><a href="account.html">Account</a></li>
+                     <li><a href="terms.html">Terms & Condition</a></li>
+                     <li><a href="privacy.html">Privacy policy</a></li>
+                 </ul>
+             </div>
+             <div class=footer-content>
+                 <ul>
+                     <li class=footer-title>Payment</li>
+                     <li><img src="images/Footer/logo-2-mastercard.png"><img src="images/Footer/visa-logo.png"><img src="images/Footer/fpx-logo.png"></li>
+                     <li><img src="images/Footer/logo-4-boost.png"><img src="images/Footer/logo-5-tng.png"><img src="images/Footer/logo-6-grab.png"></li>
+                 </ul>
+             </div>
+         </div>
+     
+         <div class="copyright">
+             &copy;2021 Deportes &trade;. All rights reserved.
+         </div>
+         </footer>
+</body>
+</html>

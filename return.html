@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Tang Sharren
+        
+            Filename: return.html
+        
+        -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Return & Refund</title>
+    <!---------favicon-------->
+    <link rel="shortcut icon" type="image/x-ico" href="small-logo.ico"/>
+    <!----------External css-->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/terms_return.css" rel="stylesheet" type="text/css">
+    <link href="css/Header.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/livechat.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <!-----------------------header part--------------------------------->
+     <!----header part------->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Tan Chen Xun
+        
+            Part name: Header
+        
+        -->
+        <!----Start of header------>
+        <header>
+            <div id=top-nav-container>
+                <div id="top-navigation">
+                    <button class="mobile-item"><img id="click-menu" class="mobile-item" onclick="dropfunction()" src="images/Header/menu.png" height="20px" width="20px"></button>
+                    <a href="Home.html"id="logo-top"><img src="images/Header/logo-2.png" alt=logo height="45px" width="60px"></a>
+                    <input type="checkbox" id="show-searchholder">
+                    <label for="show-searchholder" class="mobile-item"><img src="images/Header/search.png" alt="search" height="20px" width=20px /></label>
+                    <div id="searchholder"  onclick="display_search()">
+                        <input type="text" id="search_contain"  onkeyup="search_product()" placeholder="Search..">
+                        <img src="images/Header/search.png" alt="search" height="20px" width=20px />
+                        <ul id="search_list">
+                            <h3>Popular Searches</h3>
+                            <li><a href="men_running.html">Man Running Shoes</a></li>
+                            <li><a href="women_basketball.html">Woman Basketball Shoes</a></li>
+                            <li><a href="men_badminton.html">Man Badminton Shoes</a></li>
+                            <li><a href="women_running.html">Woman Running Shoes</a></li>
+                            <li><a href="men_basketball.html">Man Basketball Shoes</a></li>
+                            <li><a href="new arrivals.html">New Arrivals</a></li>
+                            <li><a href="clearance.html">Clearance</a></li>
+                            <li><a href="women_badminton.html">Woman Badminton Shoes</a></li>
+                            <li><a href="women_lifestyle.html">Woman Lifestyle Shies</a></li>
+                            <li><a href="equipment-sec1.html">Ball</a></li>
+                            <li><a href="equipment-sec2.html">Body building</a></li>
+                            <li><a href="equipment-sec3.html">Yoga</a></li>
+                            <li><a href="men_lifestyle.html">Men Lifestyle Shoes</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <nav class="desktop-item" id="horizontal-nav">
+                        <ul>
+                            <li><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="Wishlist2.html">Wishlist<img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html">Cart<img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                    
+                    <nav class="mobile-item" id="horizontal-nav2">
+                        <ul>
+                            <li><a href="Wishlist2.html"><img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html"><img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <section id="sec-nav">
+                <section id="nav-table">
+                    <ul id="menu">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="new arrivals.html">New Arrivals</a></li>
+                        <li><a href="footwear1.html" class="desktop-item submenuTitle">Footwear<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></a>
+                            <input type="checkbox" id="show-submenu">
+                            <label for="show-submenu" class="mobile-item label-text"><a href="footwear1.html">Footwear</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                                <ul class="submenu" id="submenu-1">
+                                    <li><span class="desktop-item submenu-2Title">Man</span>
+                                        <input type="checkbox" id="show-submenu-1-2-1">
+                                        <label for="show-submenu-1-2-1" class="mobile-item label-text" style="padding-left: 5%;">Man<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-1">
+                                            <li id="running-man"><a href="men_running.html">Running</a></li>
+                                            <li id="lifestyle-man"><a href="men_lifestyle.html" id="life-style-man">Lifestyle</a></li>
+                                            <li id="training-man"><a href="men_badminton.html" id="training-man">Badminton</a></li>
+                                            <li id="basketball-man"><a href="men_basketball.html" id="basketball-man">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><span class="desktop-item submenu-2Title">Woman</span>
+                                        <input type="checkbox" id="show-submenu-1-2-2">
+                                        <label for="show-submenu-1-2-2" class="mobile-item label-text" style="padding-left: 5%;">Woman<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-2">
+                                            <li id="running-woman"><a href="women_running.html">Running</a></li>
+                                            <li id="lifestyle-woman"><a href="women_lifestyle.html">Lifestyle</a></li>
+                                            <li id="training-woman"><a href="women_badminton.html">Badminton</a></li>
+                                            <li id="basketball-woman"><a href="women_basketball.html">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li><a href="equipment.html" class="desktop-item submenuTitle">Equipment<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-2">
+                            <label for="show-submenu-2" class="mobile-item label-text"><a href="equipment.html">Equipment</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-2">
+                                <li><a href="equipment-sec1.html">Ball</a></li>
+                                <li><a href="equipment-sec3.html">Body Building</a></li>
+                                <li><a href="equipment-sec2.html">Yoga</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Apparel.html" class="desktop-item submenuTitle">Apparel<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-3">
+                            <label for="show-submenu-3" class="mobile-item label-text"><a href="Apparel.html">Apparel</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-3">
+                                <li id="apparel-man"><a href="#" class="desktop-item submenu-2Title">Man<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-1">
+                                    <label for="show-submenu-3-1" class="mobile-item label-text"><a href="#">Man</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-1">
+                                        <li id="man-shirt"><a href="Man_tops.html">Man Tops</a></li>
+                                        <li id="man-pants"><a href="Man-bottoms.html" id="life-style-man">Man Bottoms</a></li>
+                                    </ul>
+                                </li>
+                                <li id="apparel-woman"><a href="#" class="desktop-item submenu-2Title" >Woman<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-2">
+                                    <label for="show-submenu-3-2" class="mobile-item label-text"><a href="#">Woman</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-2">
+                                        <li id="woman-shirt"><a href="Woman_tops.html">Woman Tops</a></li>
+                                        <li id="woman-pants"><a href="Woman-bottoms.html">Woman Bottoms</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Accessories.html" id="submenuTitle">Accessories</a></li>
+                        <li><a href="clearance.html">Clearance</a></li>
+                        <li class="mobile-item"><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                        <li class="mobile-item"><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                    </ul>
+                </section>
+            </section>
+        </header>
+        <!--end of header-->
+        <!---buton to go top----->
+        <button id="ArrowBtn" onclick="topFunction()"><img src="images/Header/top.png" height=30px width=30px/></button>
+        <!---buton to go top----->
+        <!--livechat-->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Wong Yann Yiee
+        
+            Part name: livechat
+        
+        -->
+        <button class="popup_button">
+
+            <img src="images/Live-chat/popup_img.png" alt="popup" class="image_popup"  onclick="openForm()">
+         </button> 
+         <!--text form area-->
+         <div class="my_form" id="Form">
+             
+            <div class="chat-head" >
+                 <p style="font-size: larger;">Chat with us </p>
+                 <p>Helping you is our responsibility</p>
+                 <img src="images/Live-chat/close_form_icon.png" alt="close" class="close_form_icon" onclick="closeForm()">
+            </div>
+             
+             <!--container for setted question-->
+             <form id="form_container" >
+                 
+                
+                 <div class="textbox">
+                       <div class="quest" >How to start shopping ?</div>
+                       <div class="quest" >How to create an account ? </div>
+                       <div class="quest" > What delivery method is used ? </div>
+                 </div>
+       
+             </form>
+            
+             <!--container for user enter message area -->
+             <div class="message_container">
+                 
+                 <div class="input_msg">
+                    <input type="text"  placeholder="Type your message..." id="send_msg">
+                   
+                    <img src="images/Live-chat/send_button_icon.png" class="send_icon" width="15%">
+                   
+                 </div>
+     
+                 
+             </div>
+            </div>
+             <script src="mechine_livechat.js"></script> 
+        <!--livechat-->
+        <!----------------Start content------->
+
+    <!-----------------------content--------------------------------->
+<main onclick="hide_search()">
+    <div class="return-container">
+        <div class="return-title">
+            <h1>Return & Refund</h1>
+            <p>We pride ourselves of our products and dedication to customer satisfaction!</p>
+            <p>To guarantee this, we allow a period of <b>60 days</b> to return your purchase.</p>
+        </div>
+        <div class="return-content">
+            <div class="return-innercontainer">
+           
+                <p class="return-section">1. Products purchased on the Website may be returned to Deportes 
+                    for a refund subject to the following:</p>
+                <div class="content">
+                    <p>a) Products must be returned within  sixty (60) days from the date of purchase;</p>
+                
+                    <p>b) Products that are deemed to be intentionally  damaged or not properly maintained, 
+                        used outside of their intended means and Products such as foods and drinks, cosmetics, 
+                        pharmaceutical products, gas canisters, personalised items and personal safety equipments are exempted;
+                    </p>
+                </br>
+                    <p>Deportes reserves the right to accept or refuse the return based on our assessment, 
+                        taking into consideration factors such as the condition of the products and length/frequency of use.
+                    </p>
+                    
+                </div>
+           
+            <p class="return-section">2. The Customer can initiate a request to return the Products by:</p>
+                <div class="content">
+                    <p>Reaching out to the Deportes Customer Service team (contact details can be obtained via 
+                    the "Contact Us" section on the website)</p>
+                </div>
+            <p class="return-section">3. The Customer may return Products purchased online for a refund:</p>
+                <div class="content">
+                    <p>a) at any Deportes Malaysia's physical stores in Malaysia; or</p>
+                    <p>b) by courier.</p>
+                </br>
+                    <p>The Customer will be responsible for the shipping costs of Products returned by courier. 
+                        The transfer of title and risk of the Products will remain with the Customer until the Products 
+                        have reached Deportes’s warehouse/store. The Customer must package the item carefully and 
+                        include the return form leaflet completed with all necessary details. After shipping the Products, 
+                        the Customer must provide the Deportes Customer Service team with the airway 
+                        bill or tracking number for traceability purposes.</p>
+                </div>
+            <p class="return-section">
+                4. The Products will be inspected once received and in the event the Products are not eligible for a 
+                refund pursuant, Deportes may send the Products back to the Customer at the Customer’s 
+                cost and/or refuse to provide a refund.</p>
+            <p class="return-section">
+                5. Products which are eligible for a return will be processed within fourteen (14) to twenty (20) days 
+                after Deportes receives it. </p>
+                <div class="content">
+                    <p>Refunds will be based on the original mode of payment for the Order of the Products.</p>
+                </div>
+            <p class="return-section">
+                6. If Deportes has sent you an incorrect or defective item or a Product has been mis-described 
+                on the Website, and you would like to return it, either a refund or an exchange will be offered. 
+                In this event, Deportes shall bear the cost of return shipping. Please contact the Deportes Customer 
+                Service team (contact details can be obtained via the "Contact Us" section on the Website) for further 
+                instructions on how to proceed. Provided that the Product is returned with reasonable care having been taken, 
+                the refund to be provided by Deportes shall be based on your original mode of payment for the Order of the Product.</p>
+            </div>       
+        </div>
+    </div>
+</main>
+    <!-----------------------content--------------------------------->
+    <!---External javascript------>
+    <script src="Header.js"></script>
+    <script src="main_cart.js"></script>
+    <!---External javascript------>
+   <!----------------------------footer-------------------------->  
+   <!------footer-------->
+   <footer>
+    <!--
+
+        BAIT1023 WEB DESIGN AND DEVELOPMENT        
+        Assignment
+
+        Author: Tang Sharren
+    
+        Part name: Footer
+    
+    -->
+    <a href="home.html">
+        <img src="images/Footer/logo-1.png" style="height: 100px; padding: 20px 0px 20px 45px; "  >
+    </a>
+    <div>
+    <div class=footer-content>
+        <ul>
+            <li class=footer-title>Discover</li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="feedback.html">Contact Us</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+    </div>
+    <div class=footer-content>
+        <ul>
+            <li class=footer-title>Support</li>
+            <li><a href="delivery.html">Product Delivery</a></li>
+            <li><a href="review.html">Customer Review</a></li>
+            <li><a href="return.html">Return & Refund</a></li>
+        </ul>
+    </div>
+    <div class=footer-content>
+        <ul>
+            <li class=footer-title>More</li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="terms.html">Terms & Condition</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+        </ul>
+    </div>
+    <div class=footer-content>
+        <ul>
+            <li class=footer-title>Payment</li>
+            <li><img src="images/Footer/logo-2-mastercard.png"><img src="images/Footer/visa-logo.png"><img src="images/Footer/fpx-logo.png"></li>
+            <li><img src="images/Footer/logo-4-boost.png"><img src="images/Footer/logo-5-tng.png"><img src="images/Footer/logo-6-grab.png"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="copyright">
+    &copy;2021 Deportes &trade;. All rights reserved.
+</div>
+</footer>
+</body>
+</html>

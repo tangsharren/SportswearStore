@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Tan Chen Xun
+        
+            Filename: About.html
+        
+        -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>About Us</title>
+        <!---------favicon-------->
+        <link rel="shortcut icon" type="image/x-ico" href="small-logo.ico"/>
+        <!----------External css-->
+        <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="css/Header.css" rel="stylesheet" type="text/css"/>
+        <link href="css/About.css" rel="stylesheet" type="text/css"/>
+        <link href="css/footer.css" rel="stylesheet" type="text/css"/>
+        <link href="css/livechat.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!----header part------->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Tan Chen Xun
+        
+            Part name: Header
+        
+        -->
+        <!----Start of header------>
+        <header>
+            <div id=top-nav-container>
+                <div id="top-navigation">
+                    <button class="mobile-item"><img id="click-menu" class="mobile-item" onclick="dropfunction()" src="images/Header/menu.png" height="20px" width="20px"></button>
+                    <a href="Home.html"id="logo-top"><img src="images/Header/logo-2.png" alt=logo height="45px" width="60px"></a>
+                    <input type="checkbox" id="show-searchholder">
+                    <label for="show-searchholder" class="mobile-item"><img src="images/Header/search.png" alt="search" height="20px" width=20px /></label>
+                    <div id="searchholder"  onclick="display_search()">
+                        <input type="text" id="search_contain"  onkeyup="search_product()" placeholder="Search..">
+                        <img src="images/Header/search.png" alt="search" height="20px" width=20px />
+                        <ul id="search_list">
+                            <h3>Popular Searches</h3>
+                            <li><a href="men_running.html">Man Running Shoes</a></li>
+                            <li><a href="women_basketball.html">Woman Basketball Shoes</a></li>
+                            <li><a href="men_badminton.html">Man Badminton Shoes</a></li>
+                            <li><a href="women_running.html">Woman Running Shoes</a></li>
+                            <li><a href="men_basketball.html">Man Basketball Shoes</a></li>
+                            <li><a href="new arrivals.html">New Arrivals</a></li>
+                            <li><a href="clearance.html">Clearance</a></li>
+                            <li><a href="women_badminton.html">Woman Badminton Shoes</a></li>
+                            <li><a href="women_lifestyle.html">Woman Lifestyle Shies</a></li>
+                            <li><a href="equipment-sec1.html">Ball</a></li>
+                            <li><a href="equipment-sec2.html">Body building</a></li>
+                            <li><a href="equipment-sec3.html">Yoga</a></li>
+                            <li><a href="men_lifestyle.html">Men Lifestyle Shoes</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <nav class="desktop-item" id="horizontal-nav">
+                        <ul>
+                            <li><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="Wishlist2.html">Wishlist<img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html">Cart<img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                    
+                    <nav class="mobile-item" id="horizontal-nav2">
+                        <ul>
+                            <li><a href="Wishlist2.html"><img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html"><img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <section id="sec-nav">
+                <section id="nav-table">
+                    <ul id="menu">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="new arrivals.html">New Arrivals</a></li>
+                        <li><a href="footwear1.html" class="desktop-item submenuTitle">Footwear<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></a>
+                            <input type="checkbox" id="show-submenu">
+                            <label for="show-submenu" class="mobile-item label-text"><a href="footwear1.html">Footwear</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                                <ul class="submenu" id="submenu-1">
+                                    <li><span class="desktop-item submenu-2Title">Man</span>
+                                        <input type="checkbox" id="show-submenu-1-2-1">
+                                        <label for="show-submenu-1-2-1" class="mobile-item label-text" style="padding-left: 5%;">Man<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-1">
+                                            <li id="running-man"><a href="men_running.html">Running</a></li>
+                                            <li id="lifestyle-man"><a href="men_lifestyle.html" id="life-style-man">Lifestyle</a></li>
+                                            <li id="training-man"><a href="men_badminton.html" id="training-man">Badminton</a></li>
+                                            <li id="basketball-man"><a href="men_basketball.html" id="basketball-man">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><span class="desktop-item submenu-2Title">Woman</span>
+                                        <input type="checkbox" id="show-submenu-1-2-2">
+                                        <label for="show-submenu-1-2-2" class="mobile-item label-text" style="padding-left: 5%;">Woman<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-2">
+                                            <li id="running-woman"><a href="women_running.html">Running</a></li>
+                                            <li id="lifestyle-woman"><a href="women_lifestyle.html">Lifestyle</a></li>
+                                            <li id="training-woman"><a href="women_badminton.html">Badminton</a></li>
+                                            <li id="basketball-woman"><a href="women_basketball.html">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li><a href="equipment.html" class="desktop-item submenuTitle">Equipment<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-2">
+                            <label for="show-submenu-2" class="mobile-item label-text"><a href="equipment.html">Equipment</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-2">
+                                <li><a href="equipment-sec1.html">Ball</a></li>
+                                <li><a href="equipment-sec3.html">Body Building</a></li>
+                                <li><a href="equipment-sec2.html">Yoga</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Apparel.html" class="desktop-item submenuTitle">Apparel<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-3">
+                            <label for="show-submenu-3" class="mobile-item label-text"><a href="Apparel.html">Apparel</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-3">
+                                <li id="apparel-man"><a href="#" class="desktop-item submenu-2Title">Man<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-1">
+                                    <label for="show-submenu-3-1" class="mobile-item label-text"><a href="#">Man</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-1">
+                                        <li id="man-shirt"><a href="Man_tops.html">Man Tops</a></li>
+                                        <li id="man-pants"><a href="Man-bottoms.html" id="life-style-man">Man Bottoms</a></li>
+                                    </ul>
+                                </li>
+                                <li id="apparel-woman"><a href="#" class="desktop-item submenu-2Title" >Woman<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-2">
+                                    <label for="show-submenu-3-2" class="mobile-item label-text"><a href="#">Woman</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-2">
+                                        <li id="woman-shirt"><a href="Woman_tops.html">Woman Tops</a></li>
+                                        <li id="woman-pants"><a href="Woman-bottoms.html">Woman Bottoms</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Accessories.html" id="submenuTitle">Accessories</a></li>
+                        <li><a href="clearance.html">Clearance</a></li>
+                        <li class="mobile-item"><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                        <li class="mobile-item"><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                    </ul>
+                </section>
+            </section>
+        </header>
+        <!--end of header-->
+        <!---buton to go top----->
+        <button id="ArrowBtn" onclick="topFunction()"><img src="images/Header/top.png" height=30px width=30px/></button>
+        <!---buton to go top----->
+        <!--livechat-->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Wong Yann Yiee
+        
+            Part name: livechat
+        
+        -->
+        <button class="popup_button">
+
+            <img src="images/Live-chat/popup_img.png" alt="popup" class="image_popup"  onclick="openForm()">
+         </button> 
+         <!--text form area-->
+         <div class="my_form" id="Form">
+             
+            <div class="chat-head" >
+                 <p style="font-size: larger;">Chat with us </p>
+                 <p>Helping you is our responsibility</p>
+                 <img src="images/Live-chat/close_form_icon.png" alt="close" class="close_form_icon" onclick="closeForm()">
+            </div>
+             
+             <!--container for setted question-->
+             <form id="form_container" >
+                 
+                
+                 <div class="textbox">
+                       <div class="quest" >How to start shopping ?</div>
+                       <div class="quest" >How to create an account ? </div>
+                       <div class="quest" > What delivery method is used ? </div>
+                 </div>
+       
+             </form>
+            
+             <!--container for user enter message area -->
+             <div class="message_container">
+                 
+                 <div class="input_msg">
+                    <input type="text"  placeholder="Type your message..." id="send_msg">
+                   
+                    <img src="images/Live-chat/send_button_icon.png" class="send_icon" width="15%">
+                   
+                 </div>
+     
+                 
+             </div>
+            </div>
+             <script src="mechine_livechat.js"></script> 
+        <!--livechat-->
+        <!-----Start of content-->
+        <main onclick="hide_search()">
+            <section class="top-about">
+                <div id="words">
+                    <h1>Hello, We are Deportes!</h1>
+                    <hr>
+                    <p></br>We are a group of people who are passionate about sports and intends to 
+                        inspire the community for sports.</p>
+                </div>
+                <img src="images/About/group2.jpg" alt="grpphoto" width="500px" height="300px">
+            </section>
+
+            <article>
+                <div class="main-text">
+                    <h1>About Us</h1>
+                    <p> DEPORTES is a malaysia sports retail company based in kuala lumpur founded in 2021 by a group 
+                        of people who are passionate about sports. our goal is to inspire and empower people around the
+                        world, by fueling them with a shared passion for sports. we not only strive to unite people in
+                        sports but also provide quality goods that are both durable and sustainable. we are passionate
+                        about protecting the future of sports. we want to help create a healthy planet where everyone is
+                        able to thrive. we sell general sports items such as shoes, clothes pants and accessories that
+                        cater to all ages and genders. the products that we chose to put on our shelf are from brands 
+                        that share the same ideology as us when it comes to mother nature. here we only sell products 
+                        that use sustainable materials. to name a few sustainable materials in the products we sell: 
+                        organic cotton, recycled cotton, organic lenin, recycled polyester and so on and so forth. 
+                    </p>
+                </div>
+                <div class="sub-text">
+                    <div class=ribbon>
+                        <h1>Vision and Mission</h1>
+                    </div>
+                    <ul>
+                        <li>Make sports available for all for a healthier and more energized community</li>
+                        <li>Always provide the best service to our customer</li>
+                        <li>Maintain and always improve our product's quality</li>
+                    </ul>
+                </div>
+            </article>
+            <section class="information">
+                <h1>Our Company Growth in these few years</h1>
+                <div class="info-list">
+                    <div class="info">
+                        <h1>Growth in number of retail store</h1>
+                        <h3 class="value">20</h3>
+                    </div>
+                    <div class="info">   
+                        <h1>Growth in employee</h1>
+                        <h3 class="value">100</h3>
+                    </div>
+                    <div class="info">
+                        <h1>Growth in daily sales </h1>
+                        <div class="value">30M+</div>
+                    </div>
+                    
+                </div>
+            </section>
+            <aside>
+                <h1>What they said about us<hr></h1>
+                <div class="review-container">
+                    <div class="review-slide">
+                        <div class="review-image">
+                            <img src="images/About/review-1.jpg" alt="review1" width="180px" height="220px">
+                        </div>
+                        <p>The website was extremely user friendly. Their prices plus shipping was the 
+                            lowest I found on line. Product got to my door step very quickly and my order
+                             was correct. I'll order from them every chance I get. Thank you Deportes 
+                            . Totally a five star class act!</p>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review-image">
+                            <img src="images/About/review-2.jpg" alt="review1" width="180px" height="220px">
+                        </div>
+                        <p>I have ordered twice from this Deportes and they have 
+                            always reply to me and send me my product and fast time I will definitely 
+                            keep buying from them heck I would buy from them every single day if I could 
+                            but I will have just too much clothes (:</p>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review-image">
+                            <img src="images/About/review-3.jpg" alt="review1" width="180px" height="220px">
+                        </div>
+                        <p>I've been buying in to at Deportes for years and have always been impressed
+                             with the quality for price. Most recently I bought a plain white cotton 
+                             t-shirt here. For RM30 I wasn't expecting much, but the quality blew me away!
+                              I've even worn a dark coloured shirt under it and you couldn't tell. This is 
+                              a great store for classic pieces on a budget.</p>
+                    </div> 
+                    <div id="link_review"><button><a href="review.html">Read More</a></button></div>                  
+                </div>
+
+            </aside>
+
+        </main>
+        <!--------End of content-------->
+        <!---External Javascript-->
+        <script src="Header.js"></script>
+        <script src="main_cart.js"></script>
+        <!---External Javascript-->
+        <footer>
+            <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Sharren
+        
+            Part name: Footer
+        
+        -->
+            <a href="home.html">
+                <img src="images/Footer/logo-1.png" style="height: 100px; padding: 20px 0px 20px 45px; "  >
+            </a>
+            <div>
+            <div class=footer-content>
+                <ul>
+                    <li class=footer-title>Discover</li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="feedback.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class=footer-content>
+                <ul>
+                    <li class=footer-title>Support</li>
+                    <li><a href="delivery.html">Product Delivery</a></li>
+                    <li><a href="review.html">Customer Review</a></li>
+                    <li><a href="return.html">Return & Refund</a></li>
+                </ul>
+            </div>
+            <div class=footer-content>
+                <ul>
+                    <li class=footer-title>More</li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="terms.html">Terms & Condition</a></li>
+                    <li><a href="privacy.html">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class=footer-content>
+                <ul>
+                    <li class=footer-title>Payment</li>
+                    <li><img src="images/Footer/logo-2-mastercard.png"><img src="images/Footer/visa-logo.png"><img src="images/Footer/fpx-logo.png"></li>
+                    <li><img src="images/Footer/logo-4-boost.png"><img src="images/Footer/logo-5-tng.png"><img src="images/Footer/logo-6-grab.png"></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="copyright">
+            &copy;2021 Deportes &trade;. All rights reserved.
+        </div>
+        </footer>
+    </body>
+</html>

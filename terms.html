@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!--
+        BAIT1023 WEB DESIGN AND DEVELOPMENT        
+        Assignment
+
+        Author: Tang Sharren
+        
+        Filename: terms.html
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Terms & Condition</title>
+     <!---------favicon-------->
+     <link rel="shortcut icon" type="image/x-ico" href="small-logo.ico"/>
+     <!----------External css-->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/terms_return.css" rel="stylesheet" type="text/css">
+    <link href="css/Header.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link href="css/livechat.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <!-----------------------header part--------------------------------->
+     <!----header part------->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Tan Chen Xun
+        
+            Part name: Header
+        
+        -->
+        <!----Start of header------>
+        <header>
+            <div id=top-nav-container>
+                <div id="top-navigation">
+                    <button class="mobile-item"><img id="click-menu" class="mobile-item" onclick="dropfunction()" src="images/Header/menu.png" height="20px" width="20px"></button>
+                    <a href="Home.html"id="logo-top"><img src="images/Header/logo-2.png" alt=logo height="45px" width="60px"></a>
+                    <input type="checkbox" id="show-searchholder">
+                    <label for="show-searchholder" class="mobile-item"><img src="images/Header/search.png" alt="search" height="20px" width=20px /></label>
+                    <div id="searchholder"  onclick="display_search()">
+                        <input type="text" id="search_contain"  onkeyup="search_product()" placeholder="Search..">
+                        <img src="images/Header/search.png" alt="search" height="20px" width=20px />
+                        <ul id="search_list">
+                            <h3>Popular Searches</h3>
+                            <li><a href="men_running.html">Man Running Shoes</a></li>
+                            <li><a href="women_basketball.html">Woman Basketball Shoes</a></li>
+                            <li><a href="men_badminton.html">Man Badminton Shoes</a></li>
+                            <li><a href="women_running.html">Woman Running Shoes</a></li>
+                            <li><a href="men_basketball.html">Man Basketball Shoes</a></li>
+                            <li><a href="new arrivals.html">New Arrivals</a></li>
+                            <li><a href="clearance.html">Clearance</a></li>
+                            <li><a href="women_badminton.html">Woman Badminton Shoes</a></li>
+                            <li><a href="women_lifestyle.html">Woman Lifestyle Shies</a></li>
+                            <li><a href="equipment-sec1.html">Ball</a></li>
+                            <li><a href="equipment-sec2.html">Body building</a></li>
+                            <li><a href="equipment-sec3.html">Yoga</a></li>
+                            <li><a href="men_lifestyle.html">Men Lifestyle Shoes</a></li>
+                            <li><a href="Accessories.html">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <nav class="desktop-item" id="horizontal-nav">
+                        <ul>
+                            <li><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                            <li><a href="Wishlist2.html">Wishlist<img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html">Cart<img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                    
+                    <nav class="mobile-item" id="horizontal-nav2">
+                        <ul>
+                            <li><a href="Wishlist2.html"><img src="images/Header/wish-1.png" alt="wish" height="12px" width="12px"></a></li>
+                            <li><a href="cart.html"><img src="images/Header/cart.png" alt="cart" height="15px" width="15px"><span class="cart-tooltip">0</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <section id="sec-nav">
+                <section id="nav-table">
+                    <ul id="menu">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="new arrivals.html">New Arrivals</a></li>
+                        <li><a href="footwear1.html" class="desktop-item submenuTitle">Footwear<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></a>
+                            <input type="checkbox" id="show-submenu">
+                            <label for="show-submenu" class="mobile-item label-text"><a href="footwear1.html">Footwear</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                                <ul class="submenu" id="submenu-1">
+                                    <li><span class="desktop-item submenu-2Title">Man</span>
+                                        <input type="checkbox" id="show-submenu-1-2-1">
+                                        <label for="show-submenu-1-2-1" class="mobile-item label-text" style="padding-left: 5%;">Man<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-1">
+                                            <li id="running-man"><a href="men_running.html">Running</a></li>
+                                            <li id="lifestyle-man"><a href="men_lifestyle.html" id="life-style-man">Lifestyle</a></li>
+                                            <li id="training-man"><a href="men_badminton.html" id="training-man">Badminton</a></li>
+                                            <li id="basketball-man"><a href="men_basketball.html" id="basketball-man">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><span class="desktop-item submenu-2Title">Woman</span>
+                                        <input type="checkbox" id="show-submenu-1-2-2">
+                                        <label for="show-submenu-1-2-2" class="mobile-item label-text" style="padding-left: 5%;">Woman<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                        <ul class="submenu-1-2" id="submenu-1-2-2">
+                                            <li id="running-woman"><a href="women_running.html">Running</a></li>
+                                            <li id="lifestyle-woman"><a href="women_lifestyle.html">Lifestyle</a></li>
+                                            <li id="training-woman"><a href="women_badminton.html">Badminton</a></li>
+                                            <li id="basketball-woman"><a href="women_basketball.html">Basketball</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li><a href="equipment.html" class="desktop-item submenuTitle">Equipment<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-2">
+                            <label for="show-submenu-2" class="mobile-item label-text"><a href="equipment.html">Equipment</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-2">
+                                <li><a href="equipment-sec1.html">Ball</a></li>
+                                <li><a href="equipment-sec3.html">Body Building</a></li>
+                                <li><a href="equipment-sec2.html">Yoga</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Apparel.html" class="desktop-item submenuTitle">Apparel<img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></a>
+                            <input type="checkbox" id="show-submenu-3">
+                            <label for="show-submenu-3" class="mobile-item label-text"><a href="Apparel.html">Apparel</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="18px" width="16px" /></label>
+                            <ul class="submenu" id="submenu-3">
+                                <li id="apparel-man"><a href="#" class="desktop-item submenu-2Title">Man<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-1">
+                                    <label for="show-submenu-3-1" class="mobile-item label-text"><a href="#">Man</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-1">
+                                        <li id="man-shirt"><a href="Man_tops.html">Man Tops</a></li>
+                                        <li id="man-pants"><a href="Man-bottoms.html" id="life-style-man">Man Bottoms</a></li>
+                                    </ul>
+                                </li>
+                                <li id="apparel-woman"><a href="#" class="desktop-item submenu-2Title" >Woman<img src="images/Header/menu-right-arrow.png" class="menu-arrow-right" alt="right-arrow" height="10px" width="11px" /></a>
+                                    <input type="checkbox" id="show-submenu-3-2">
+                                    <label for="show-submenu-3-2" class="mobile-item label-text"><a href="#">Woman</a><img src="images/Header/down.png" class="menu-arrow-down" alt="down-arrow" height="20px" width="18px" /></label>
+                                    <ul id="submenu-3-2">
+                                        <li id="woman-shirt"><a href="Woman_tops.html">Woman Tops</a></li>
+                                        <li id="woman-pants"><a href="Woman-bottoms.html">Woman Bottoms</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Accessories.html" id="submenuTitle">Accessories</a></li>
+                        <li><a href="clearance.html">Clearance</a></li>
+                        <li class="mobile-item"><a href="login.html">Login<img src="images/Header/Login-2.png" alt="login" height="15px" width="15px"></a></li>
+                        <li class="mobile-item"><a href="register.html">Register<img src="images/Header/register.png" alt="login" height="15px" width="15px"></a></li>
+                    </ul>
+                </section>
+            </section>
+        </header>
+        <!--end of header-->
+        <!---buton to go top----->
+        <button id="ArrowBtn" onclick="topFunction()"><img src="images/Header/top.png" height=30px width=30px/></button>
+        <!---buton to go top----->
+        <!--livechat-->
+        <!--
+    
+            BAIT1023 WEB DESIGN AND DEVELOPMENT        
+            Assignment
+    
+            Author: Wong Yann Yiee
+        
+            Part name: livechat
+        
+        -->
+        <button class="popup_button">
+
+            <img src="images/Live-chat/popup_img.png" alt="popup" class="image_popup"  onclick="openForm()">
+         </button> 
+         <!--text form area-->
+         <div class="my_form" id="Form">
+             
+            <div class="chat-head" >
+                 <p style="font-size: larger;">Chat with us </p>
+                 <p>Helping you is our responsibility</p>
+                 <img src="images/Live-chat/close_form_icon.png" alt="close" class="close_form_icon" onclick="closeForm()">
+            </div>
+             
+             <!--container for setted question-->
+             <form id="form_container" >
+                 
+                
+                 <div class="textbox">
+                       <div class="quest" >How to start shopping ?</div>
+                       <div class="quest" >How to create an account ? </div>
+                       <div class="quest" > What delivery method is used ? </div>
+                 </div>
+       
+             </form>
+            
+             <!--container for user enter message area -->
+             <div class="message_container">
+                 
+                 <div class="input_msg">
+                    <input type="text"  placeholder="Type your message..." id="send_msg">
+                   
+                    <img src="images/Live-chat/send_button_icon.png" class="send_icon" width="15%">
+                   
+                 </div>
+     
+                 
+             </div>
+            </div>
+             <script src="mechine_livechat.js"></script> 
+        <!--livechat-->
+<!----------------Start content------->
+
+    <!-----------------------content--------------------------------->
+<main onclick="hide_search()">
+    <div class="return-container">
+        <div class="return-title">
+            <h1>Terms & Conditions</h1>
+        </div>
+        <div class="return-content">
+            <div class="return-innercontainer">
+           
+                <p class="return-section">1. Introduction</p>
+                <div class="content">
+                    <p>1.1 Users of the Website (“Customer”, “User”, “you” and “your”) will be subject to these General Terms and 
+                        Conditions of Use. Deportes and the User shall collectively be referred to as “Parties” and “Party” shall 
+                        refer to any of them, as the context may require.</p>
+                
+                    <p>1.2 These General Terms and Conditions of Use consist of miscellaneous provisions, which shall be applicable 
+                        to all Users of the Website, terms and conditions of sale on this website, which shall be specifically 
+                        applicable to Users of this website.
+                    </p>
+                </br>
+                    <p>1.3 By using the Website, you agree to be bound by these General Terms and Conditions of Use.
+                    </p>
+                    <p>1.4 These General Terms and Conditions of Use may be amended, modified or updated from time to time by Deportes 
+                        without notice. You are encouraged to check this page regularly to take notice of any changes we may have made to 
+                        the General Terms and Conditions of Use.</p>
+
+                    <p>1.5 These General Terms and Conditions of Use, together with the Privacy Policy, governs and applies to anyone accessing 
+                        or using the Website and the relationship between the Parties. By accessing and/or using the Website, you are deemed to 
+                        have agreed to be bound by these General Terms and Conditions of Use, the Privacy Policy and any amendments issued by us 
+                        from time to time.</p>
+                </div>
+           
+            <p class="return-section">2. Representations and Warranties</p>
+                <div class="content">
+                    <p>2.1 By using the Website and utilizing the services available via the Website:</p>
+                    <p>a.You represent and warrant that you are over 18 years of age;</p>
+                    <p>b.You have the legal capacity to abide by these General Terms and Conditions of Use and to form a binding contract;</p>
+                    <p>You undertake to accept and be bound by these General Terms and Conditions of Use and to comply with all applicable laws,
+                        regulations and rules in relation to your access to and use of the Website;</p>
+                    <p>You represent and warrant that you are authorized to provide the personal data necessary and all personal data provided 
+                        to Deportes is true and accurate;
+                    </p>
+                    <p> You are authorized to use the payment method you will provide for placement of orders</p>
+                </div>
+            <p class="return-section">3. Access and Use of Website</p>
+                <div class="content">
+                    <p>3.1 Access of Website
+
+                    <p>
+                        3.1.1 It is your responsibility to ensure your equipment (computer, laptop, netbook, tablet or other mobile device) meets 
+                        all the necessary technical specifications to enable you to access and use the Website and is compatible with the Website.
+
+                    </p>
+                    <p>
+                        3.1.2 Unavailability of features, parts, or content:
+                    </p>
+                        
+                    <p>We cannot guarantee the continuous, uninterrupted or error-free operability of the Website;</p>    
+                    <p>
+                        There may be times when certain features, parts or content of the Website, become unavailable (whether on a scheduled or 
+                        unscheduled basis) or are modified, suspended or withdrawn by us, in our sole discretion, without notice to you;
+
+                    </p> 
+                    <p>
+                        You agree that we will not be liable to you or to any third party for any unavailability, modification, suspension or 
+                        withdrawal of the Website, or any features, parts or content of the Website.
+                    </p>
+                    <p>
+                        3.2 Use of Website
+                    </p>   
+                    <p>
+                        3.2.1 Unless otherwise specified, the Website is solely for your personal and non-commercial use and you agree that you 
+                        are only authorised to visit, view and retain a copy of any information or services obtained from the Website for 
+                        informational use. You understand and agree that you are strictly prohibited from duplicating, adapting, modifying, 
+                        commercially distributing, publishing, licensing or selling any information, material or services
+                         obtained from the Website.                        
+                    </p> 
+                    <p>
+                        3.2.2 Except to the extent expressly set out herein, you are not allowed to:                        
+                    </p> 
+                    <p>
+                        a.'scrape' content or store content of the Website on a server or other storage device connected to a network or create 
+                        an electronic database by systematically downloading and storing all the content of the Website;                        
+                    </p> 
+                    <p>
+                        b. remove or change any content of the Website or attempt to circumvent security or interfere with the proper working 
+                        of the Website or the servers on which it is hosted;                        
+                    </p> 
+                    <p>
+                        c. use any part of the content on the Website for commercial purposes without obtaining a license to do so from us or 
+                        our licensors;        
+                    </p> 
+                    <p>
+                        d. modify the physical or electronic copies of the content of the Website you have printed, copied, or stored; or                        
+                    </p> 
+                    <p>
+                        e. create links to the Website from any other website without our prior written consent, although you may link 
+                        from a website that is operated by you provided the link is not misleading or deceptive and fairly indicates its 
+                        destination, you do not imply that we endorse you, your website, or any products or services you offer, you link 
+                        to (and do not frame or replicate) the home page of the Website, and the linked website does not contain any content 
+                        that is unlawful, threatening, abusive, defamatory, pornographic, obscene, vulgar, indecent, offensive or which 
+                        infringes on the intellectual property rights or other rights of any third party;                        
+                    </p> 
+                    <p>
+                        f. transmit, or procure the sending of, any unsolicited or unauthorised advertising or promotional material or 
+                        any other form of similar solicitation (spam);                       
+                    </p> 
+                    <p>
+                        g. knowingly transmit any data, send or upload any material that contains viruses, trojan horses, worms, time-bombs,
+                         keystroke loggers, spyware, adware or any other harmful programs or similar computer code designed to adversely 
+                         affect the operation of any computer software or hardware; or                        
+                    </p> 
+                    <p>
+                        h. use the Website in any way that breaches any applicable law, regulation or rule;
+                    </p> 
+                    <p>
+                        i. use the Website in any way that is unlawful or fraudulent, or has any unlawful or fraudulent purpose or effect.</p>
+                    </p>
+                </div>        
+            <p class="return-section">4. Content</p>
+            <div class="content">
+                <p>
+                    4.1 All information, text, descriptions, data, graphics, images, logos, illustrations, designs, icons, video clips, 
+                    audio clips, sounds, files, specifications, advertisements, titles, names, intellectual property rights and any other
+                     information provided on the Website (hereinafter referred to 
+                    as the “Content”) are owned by Deportes or its associated companies.
+                </p>
+                <p>
+                    4.2 We may change the format and content of the Website from time to time. You agree that your use of the Website is
+                     on an 'as is' and 'as available' basis and at your sole risk.
+                </p>
+                <p>
+                    4.3 Whilst we try to make sure that all information contained on the Website (other than any User-Generated Content 
+                    and/or User Submission) is correct, it is not intended to amount to authority or advice on which reliance should be placed. 
+                    You should check with us or the relevant information source before acting on any such information.
+                    
+                </p>
+                <p>
+                    4.4 Deportes makes no representations, warranties or guarantees, whether express or implied, as to the accuracy, completeness,
+                     currency, correctness, reliability, integrity, quality, fitness for purpose or originality of any Content of the Website and, 
+                     to the fullest extent permitted by law, all implied warranties, conditions or other terms of any kind are hereby excluded and 
+                     we accept no liability for any loss or damage of any kind incurred as a result of you or anyone else using the Website or 
+                     relying on any of its content. Deportes reserves the right, in its sole discretion, to amend, modify, update, 
+                    change or otherwise alter the Content at any time without providing notice.
+                </p>
+                <p>
+                    4.5 We cannot and do not guarantee that any Content of the Website will be free from viruses and/or other code that may have 
+                    contaminating or destructive elements. It is your responsibility to implement appropriate IT security safeguards (including 
+                    anti-virus and other security checks) to satisfy your particular requirements as to the safety and reliability of content.                    
+                </p>
+                <p>
+                    4.6 The Website may include links to third party websites that let you leave the Website. These linked sites are not under 
+                    the control of Deportes and Deportes is not liable or responsible for the accuracy, completeness, timeliness or availability 
+                    of any third party content. Links to any third party websites are provided for your convenience only and the inclusion of any 
+                    link does not imply endorsement by Deportes of the website. Your use of such third party website(s) is at your own risk and may 
+                    be subject to that third party’s terms and conditions.                   
+                </p>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</main> 
+    <!-----------------------content--------------------------------->
+     <!---External javascript------>
+     <script src="Header.js"></script>
+     <script src="main_cart.js"></script>
+     <!---External javascript------>
+    <!----------------------------footer-------------------------->
+    <footer>
+         <!--
+     
+             BAIT1023 WEB DESIGN AND DEVELOPMENT        
+             Assignment
+     
+             Author: Tang Sharren
+         
+             Part name: Footer
+         
+         -->
+         <a href="home.html">
+             <img src="images/Footer/logo-1.png" style="height: 100px; padding: 20px 0px 20px 45px; "  >
+         </a>
+         <div>
+         <div class=footer-content>
+             <ul>
+                 <li class=footer-title>Discover</li>
+                 <li><a href="About.html">About Us</a></li>
+                 <li><a href="feedback.html">Contact Us</a></li>
+                 <li><a href="faqs.html">FAQs</a></li>
+             </ul>
+         </div>
+         <div class=footer-content>
+             <ul>
+                 <li class=footer-title>Support</li>
+                 <li><a href="delivery.html">Product Delivery</a></li>
+                 <li><a href="review.html">Customer Review</a></li>
+                 <li><a href="return.html">Return & Refund</a></li>
+             </ul>
+         </div>
+         <div class=footer-content>
+             <ul>
+                 <li class=footer-title>More</li>
+                 <li><a href="account.html">Account</a></li>
+                 <li><a href="terms.html">Terms & Condition</a></li>
+                 <li><a href="privacy.html">Privacy policy</a></li>
+             </ul>
+         </div>
+         <div class=footer-content>
+             <ul>
+                 <li class=footer-title>Payment</li>
+                 <li><img src="images/Footer/logo-2-mastercard.png"><img src="images/Footer/visa-logo.png"><img src="images/Footer/fpx-logo.png"></li>
+                 <li><img src="images/Footer/logo-4-boost.png"><img src="images/Footer/logo-5-tng.png"><img src="images/Footer/logo-6-grab.png"></li>
+             </ul>
+         </div>
+     </div>
+     
+     <div class="copyright">
+         &copy;2021 Deportes &trade;. All rights reserved.
+     </div>
+     </footer>
+</body>
+</html>
