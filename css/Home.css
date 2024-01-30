@@ -1,0 +1,381 @@
+/*
+
+  BAIT1023 WEB DESIGN AND DEVELOPMENT        
+  Assignment
+
+  Author: Tan Chen Xun 
+    
+  Filename: Home.css
+    
+*/
+@charset "utf-8";
+@font-face {
+    font-family: Comforter;
+    src: url(../fonts/Comforter-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: Teko;
+    src: url(../font/Teko-Regular.ttf) format('truetype');
+}
+body{
+    background-color:rgba(221,221,221,0.8);
+    overflow-x:hidden;
+}
+/*-----video container start-------*/
+.auto_video{
+    position:relative;
+    display:flex;
+    justify-content: center;
+}
+#myVideo {
+    position: relative;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    height:100vh;
+  }
+
+div.content{
+    position: absolute;
+    align-self: center;
+    text-align:center;
+}
+
+div.content p{
+    font-family:Comforter;
+    font-weight:bold;
+    font-size: 5em;
+    color: #f1f1f1;
+
+}
+
+.shop{
+    font-family:Teko,Arial, Helvetica, sans-serif;
+    position:relative;
+    margin-top:5%;
+    border:1px solid white;
+    color:white;
+    padding:15px 32px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:3em;
+    cursor:pointer;
+    border-radius: 2em;
+    background-color:transparent;
+
+}
+.shop img{
+    position:relative;
+    top:5px;
+    left:10px;
+    animation-name:down;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+.shop:hover{
+    background-color:rgba(255,255,255,0.6);
+    color:black;
+    border-color:black;
+    transform:scale(1.1);
+}
+
+/*-----video container end-------*/
+/*-----slideshow ad start-------*/
+.slideshow-container{
+    position:relative;
+    width:100%;
+}
+
+.mySlides {
+    position:relative;
+    width:100%;
+    text-align: center;
+    min-height: 300px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+#New-item{
+    font-family: Teko, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    position:relative;
+    margin-top:5%;
+    margin-left:3%;
+    font-size:3em;
+}
+
+/*-----slideshow ad end-------*/
+div[id^="new-"]{
+    float:left;
+    box-sizing:border-box;
+    padding:0px;
+    margin-right:30px;
+    text-align:center;
+    border  :black solid 2px;
+    border-radius:5px;
+}
+
+/* container */
+.slide-container{
+    width:90%;
+    margin:auto;
+    position:relative;
+    margin-bottom:3%;
+}
+
+#container{
+    max-width:100%;
+    display: flex;
+    flex-flow:nowrap;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    transition: all 0.5s ease-in-out;
+    overflow:hidden;
+}
+
+.arrow{
+    cursor: pointer;
+    border-radius:50%;
+    background-color:black;
+    position: absolute;
+}
+
+#left_arrow {
+    top:40%;
+    left:3%;
+    z-index:1;
+    padding:3px;
+    padding-right: 7px;
+}
+#right_arrow {
+    top:40%;
+    right:3%;
+}
+.slider{
+    margin: 20px;
+    min-width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height:460px;
+    transform:scale(0.95);
+    transition: all .3s;
+    border:0.5px solid black;
+}
+
+.slider:hover{
+    transform: scale(1);
+}
+
+.image{
+    position: relative;
+}
+
+.image img{
+    width: 350px;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid black;
+}
+
+.product-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.product-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name a{
+    color: black;
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+
+.price{
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    margin-top: 23px;
+}
+
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 25px;
+   height: 50px;
+   width: 150px;
+   background-color: #f02c2c;
+   color: #fff;
+   font-size: 20px;
+   font-weight: bolder;
+   text-decoration:none;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #f02c2c;
+    transition: all ease 1s;
+}
+
+.Button{
+    visibility: hidden;
+}
+
+.image:hover .Button{
+    visibility: visible;
+    animation: animation 1s;
+}
+
+/*-----Footwear ad start----*/
+::cue {
+    font:1.3em sans serif;
+    color:rgb(255,255,255);
+    background-color:transparent;
+}
+
+#footwear-intro>h1{
+    font-family: Teko,Arial, Helvetica, sans-serif;
+    font-size:3em;
+}
+
+#footwear-intro>h2{
+    font-family: Teko,Arial, Helvetica, sans-serif;
+    font-size:2em;
+    margin:2% 0%;
+    text-align:center;
+    font-variant: small-caps;
+}
+#footwear-intro{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5%;
+}
+#footwear-container{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+}
+.footwear-contain{
+    position:relative;
+    width:fit-content;
+    border-radius:3%;
+    margin:0% 5%;
+}
+.footwear-contain>h1{
+    width:100%;
+    text-align:center;
+    top:48%;
+    color:white;
+    font-size:2em;
+    position:absolute;
+    font-family: Teko,cursive;
+    cursor:context-menu;
+}
+.footwear-contain>img{
+    border:0.5px solid #555;
+    border-radius:5%;
+}
+.tooltiptext{
+    width: 120px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s;
+    font-size:18px;
+}
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+#tooltiptext-1{
+    left:10%;
+    top:5%;
+}
+#tooltiptext-2{
+    left:60%;
+    top:5%;
+}
+#tooltiptext-3{
+    left:10%;
+    top:50%;
+}
+#tooltiptext-4{
+    left:60%;
+    top:50%;
+}
+.footwear-contain:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+@keyframes animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes down {
+    from {top:5px;}
+    to{top:10px;}
+}
+
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+

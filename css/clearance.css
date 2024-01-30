@@ -1,0 +1,436 @@
+/*
+
+  BAIT1023 WEB DESIGN AND DEVELOPMENT        
+  Assignment
+
+  -------Desktop View-------
+  Author: Eunice Teh Pei Yeen
+          Wong Yann Yiee
+
+  -------Mobile View--------
+  Author: Sharren Tang
+    
+  Filename: clearance.css
+    
+*/
+
+@charset "utf-8";
+@font-face {
+  font-family: Oswald-Bold;
+  src: url(../fonts/Oswald-Bold.ttf) format("truetype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap%22");
+
+/*body styles*/
+body {
+  background-color: rgb(238, 238, 238);
+}
+h1,
+div.product_menu,
+hr {
+  max-width: 1280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: rgb(61, 44, 141);
+  font-family: Oswald-Bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  padding-left: 30px;
+  border-bottom: 1px solid black;
+}
+
+div.product_menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+}
+
+/* Column Styles */
+div[class^="img-"] {
+  position: relative;
+  margin-top: 5%;
+  margin-right: 2.5%;
+  width: 350px;
+  background-color: rgba(221, 221, 221, 0.8);
+  transition: transform 0.5s;
+}
+
+div [class^="img-"] img {
+  width: 350px;
+}
+
+div[class^="img-"]:hover {
+  transform: translateY(-3%);
+  box-shadow: 5px 5px 8px 5px rgb(226, 220, 220);
+}
+
+div[class^="img-"] p {
+  font-family: "Raleway", sans-serif;
+  padding-left: 10px;
+
+  line-height: 23px;
+  font-size: 1.1rem;
+}
+
+.item_name {
+  font-weight: 600;
+}
+#cap_new {
+  color: grey;
+}
+
+/*--------Ribbon (link reference: https://codepen.io/ijasacodez/pen/jOEbERB)  <HAVE MODIFIED TO MATCH THE PAGES >-----------*/
+div[class^="img-"]:hover .new {
+  animation: move1 2s;
+}
+.new {
+  pointer-events: none;
+  display: inline-block;
+  padding: 2px 15px;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  line-height: 24px;
+  height: 24px;
+  text-align: center;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  border-radius: 0;
+  background-color: #1eb5ff;
+  color: white;
+  font-weight: bold;
+}
+
+.new_2::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  border: 9px solid transparent;
+  border-width: 12px 8px;
+}
+.new_2::before {
+  border-color: #1eb5ff;
+  border-left-color: transparent;
+  left: -9px;
+}
+
+div[class^="img-"]:hover .new_2::before {
+  animation: move2 2s;
+}
+
+@keyframes move1 {
+  from {
+    left: 200px;
+  }
+  to {
+    left: 280px;
+  }
+}
+
+@keyframes move2 {
+  from {
+    left: -10px;
+  }
+  to {
+    left: -9px;
+  }
+}
+/*--------Ribbon (link reference: https://codepen.io/ijasacodez/pen/jOEbERB)  <HAVE MODIFIED TO MATCH THE PAGES >-----------*/
+
+/*----------heart-wishlist (link reference: https://codepen.io/Zaku/pen/gOrjOGp)----------------------------------*/
+:root {
+  --size: 50px;
+  --frames: 62;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.like {
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  border-radius: 999px;
+  overflow: visible;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+
+.hearth {
+  background-image: url("https://assets.codepen.io/23500/Hashflag-AppleEvent.svg");
+  background-size: calc(var(--size) * var(--frames)) var(--size);
+  background-repeat: no-repeat;
+  background-position-x: calc(var(--size) * (var(--frames) * -1 + 2));
+  background-position-y: calc(var(--size) * 0.02);
+  width: var(--size);
+  height: var(--size);
+}
+
+input:checked + .hearth {
+  animation: like 1s steps(calc(var(--frames) - 3));
+  animation-fill-mode: forwards;
+}
+
+@keyframes like {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: calc(var(--size) * (var(--frames) * -1 + 3));
+  }
+}
+
+@media (hover: hover) {
+  .like:hover {
+    background-color: #e1255e15;
+  }
+  .hearth {
+    background-position-x: calc(var(--size) * (var(--frames) * -1 + 1));
+  }
+}
+/*----------heart-wishlist (link reference: https://codepen.io/Zaku/pen/gOrjOGp)----------------------------------*/
+
+/*---------button (link reference: https://youtu.be/2efVJhyhcOc)------------------------------------------*/
+.bn54 {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  width: fit-content;
+  justify-content: start;
+  border: none;
+}
+
+.cart_btn {
+  display: flex;
+  align-items: center;
+  /*added*/
+  justify-content: center;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #caf2f5;
+  margin-left: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.bn54span {
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  display: block;
+}
+
+.cart_btn:hover {
+  animation: bn54rotate 0.7s ease-in-out both;
+}
+
+.cart_btn:hover .bn54span {
+  animation: bn54storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes bn54rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bn54storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+/*---------button (link reference: https://youtu.be/2efVJhyhcOc)------------------------------------------*/
+/*-----------------------------------------selection--------------------------------------*/
+select {
+  cursor: pointer;
+  appearance: none;
+  background-color: #777e7c;
+  flex: 1;
+  padding: 0.5em;
+  color: white;
+}
+.custom-select {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  background-color: #5c6664;
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 30px;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+.custom-select::after {
+  cursor: pointer;
+  content: "\25BC";
+  position: absolute;
+  top: -16px;
+  right: 0;
+  padding: 10px;
+  background-color: lightgrey;
+  pointer-events: none;
+  transition: 25s all ease;
+}
+
+/*-----------------------------------------selection--------------------------------------*/
+
+/*-----------------------------------------Price Change---------------------*/
+span[id^="price"] {
+  font: 15px "Raleway", sans-serif;
+  padding-left: 10px;
+  color: rgb(201, 53, 53);
+}
+
+div[class^="img-"]:hover span[id^="price"] {
+  font-family: "Raleway", sans-serif;
+}
+
+div[class^="img-"]:hover span[id^="price"]::after {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  padding-left: 5px;
+}
+
+.img-1-1:hover #price1::after {
+  content: "RM799.00 (-30%)";
+}
+
+.img-1-2:hover #price2::after {
+  content: "RM799.00 (-30%)";
+}
+
+.img-1-3:hover #price3::after {
+  content: "RM99.00 (-20%)";
+}
+
+.img-2-1:hover #price4::after {
+  content: "RM120.00 (-30%)";
+}
+
+.img-2-2:hover #price5::after {
+  content: "RM360.00 (-40%)";
+}
+
+.img-2-3:hover #price6::after {
+  content: "RM170.00 (-50%)";
+}
+/*-----------------------------------------Price Change---------------------*/
+
+/* -----------------------Media query----------------------------------
+@media screen and (max-width: 500px) {
+  div[class^="img-"] {
+    width: 75%;
+  }
+  div[class^="img-"] img {
+    width: 100%;
+  }
+  div[class^="img-"] p {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+  select {
+    font-size: 3.2vw;
+  }
+  .custom-select {
+    width: 60%;
+    height: 8vw;
+  }
+  .custom-select::after {
+    font-size: 4vw;
+  }
+  .new {
+    font-size: 3vw;
+    padding: 2px 1.5vw;
+  }
+  .bn54span {
+    font-size: 2.5vw;
+    padding: 1vw auto;
+  }
+  .cart_btn {
+    width: 25vw;
+    height: 6vw;
+  }
+} */
+/*/*-----------------------Media query---------------------------------- */
+@media screen and (max-width: 980px) {
+  main{
+      padding-top: 10vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  div[class^="img-"] {
+    width: 75%;
+  } 
+  div[class^="img-"] img{
+    width: 100%;
+  } 
+  div[class^="img-"] p {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+  select{
+    font-size: 3.2vw;
+  }
+  .custom-select {
+    width: 60%;
+    height:8vw;
+  }
+  .custom-select::after {
+    font-size: 4vw;
+  }
+  .new{
+    font-size: 3vw;
+    padding:2px 1.5vw;
+  }
+  .bn54span {
+    font-size: 2.5vw;
+    padding: 1vw auto;
+  }
+  .cart_btn {
+    width: 25vw;
+    height: 6vw;
+  }
+}

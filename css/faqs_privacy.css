@@ -1,0 +1,122 @@
+/*
+
+  BAIT1023 WEB DESIGN AND DEVELOPMENT        
+  Assignment
+
+  Author: Tang Sharren
+    
+  Filename: faqs_privacy.css
+    
+*/
+@charset "utf-8";
+@font-face {
+    font-family: Oswald-Bold;
+    src: url(../fonts/Oswald-Bold.ttf) format('truetype');
+}
+
+body{
+    background-color:rgb(238, 238, 238);
+}
+.main-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+} 
+.privacy .content{
+    padding: 0px 2% 0px 4%;
+}
+.main-title{
+    color:rgb(31, 74, 99);
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 35px;
+    min-height: 140px; 
+}
+.main-title h1{  
+    font-size: 2.8rem;
+}
+.main-title p{
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 10px auto;
+    color:rgb(82, 97, 129);
+}
+
+.main-innercontainer {
+    position:relative;
+    min-height: 1px;
+    padding: 30px 20px;
+}
+.main-innercontainer>.main-section{
+    font-size: 2rem;
+    line-height: 1.1;
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+.collapsible {
+    color: rgb(18, 56, 112);
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid #c0bdbd;
+    text-align: left;
+    line-height: 1.25em;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 520;
+    font-family:  'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: bolder;
+}
+  
+.active, .collapsible:hover {
+    background-color: rgba(231, 228, 228, 0.904);
+}
+
+.content {
+    padding: 0px 2% 0px 4%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    font-size: 1.3em;
+    line-height: 2em;
+    font-weight: 400;
+    color: rgb(78, 94, 105);
+}
+
+.content [type=a]{
+    padding-left: 3.5%;
+}
+
+.collapsible:after {
+    content: '˅';
+    float: right;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.active::after{
+    content:'˄';
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+    .main-title{
+        min-height: fit-content;
+    }
+    .main-title h1{  
+        font-size: 6vw;
+    }
+    .main-title p {
+        font-size: 2.8vw;
+    }
+    .content,.collapsible {
+        font-size: 2.8vw;
+    }
+    .main-innercontainer>.main-section{
+        font-size: 2.8vw;
+    }
+}

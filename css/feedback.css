@@ -1,0 +1,513 @@
+@charset "utf-8";
+/*
+  Author:Wong Yann Yiee, Tan Chen Xun (for fieldset position part)
+
+*/
+/*import the font family*/
+@font-face {
+    font-family: Oswald-Bold;
+    src: url(../fonts/Oswald-Bold.ttf) format('truetype');
+}
+/*put background image and blend its with the background color in soft light*/
+body
+{
+   background:url(../images/Feedback/background_img.jpg), rgba(238, 214, 196,0.2);
+   background-blend-mode:soft-light;
+   
+}
+/*attribute and position of  h1, paragraph1, paragraph2, hr*/
+h1,hr
+{
+   width:100%;
+   max-width:1200px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+h1
+{
+   color:rgb(61, 44, 141);
+   font-family:Oswald-Bold;
+   font-size: 40px;
+   text-transform: uppercase;
+   margin-top:50px;
+}
+
+#paragraph1,#paragraph2
+{
+  
+   font-weight: bold;
+   text-align: center;
+   line-height:1.6;
+   
+}
+#paragraph1
+{
+  
+   font-size:x-large;
+}
+#paragraph2
+{
+  
+   
+   font-size:x-large;
+   
+   
+}
+/*allocate the place of the details in fieldset*/
+.field
+{
+   
+   display:table;
+   box-sizing: border-box;
+   border:none;
+   width:45%;
+   border-radius: 50px;
+   box-shadow:5px 5px 20px grey;
+   background-color: rgba(238, 214, 196,0.85);
+  
+}
+/*changes the font style of the placeholder*/
+:placeholder-shown
+{
+  
+   font-style:italic ;
+   
+}
+/*attribute for the form */
+.form
+{
+    
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+    padding-left:10px;
+    margin:5%;
+    padding-top:1%;
+   
+}
+/*set the container which is wrap the label and input be flex*/
+.item1 {
+    display:flex;
+   
+}
+/*attribute of label*/
+main label
+{
+   width:35%;
+   font-size: 20px;
+}
+/*attribute of input*/
+main input 
+{
+    position:relative;
+    outline:none;
+    border:1px solid black;
+    width:60%;
+    height:40px;
+    border-radius: 10px;
+    background-color:  rgba(249, 243, 243,0.5);
+}
+
+/*when click to the input have effects*/
+main input:focus
+{
+   border:3px solid red;
+   background-color: white;
+   width:60%;
+   height:40px;
+   box-shadow: 5px 5px 20px grey;
+   transform:translateY(-10px);/*the corresponding box will move up 10px*/
+   animation: animate 2s linear forwards;/*use animation to let the border of the box color slowly display*/
+}
+/*--------------------------------validation input---------------------------------------------------*/
+main input:focus:valid
+{
+   background:rgb(220,255,220) url(../images/Feedback/okay_valid.png) right/contain no-repeat;
+}
+
+main input:focus:invalid
+{
+   background:rgb(255,230,230) url(../images/Feedback/warning_invalid.png) right/contain no-repeat;
+}
+
+
+/*attribute of the textarea*/
+textarea
+{
+    outline: none;
+    border:1px solid black;
+    width:60%;
+    border-radius: 10px;
+    background-color: rgba(249, 243, 243,0.5);
+    
+}
+/*when click to textarea */
+textarea:focus
+{
+   border:3px solid rgb(247, 157, 171);
+   background-color: white;
+   box-shadow: 5px 5px 20px grey;
+   transform:translateY(-10px);/*the corresponding box will move up 10px*/
+   animation: animate 1.5s linear forwards;/*use animation to let the border of the box color slowly display*/
+}
+
+/*---------------------animation of border color------------------------*/
+@keyframes animate
+{
+ 
+   0%
+   {
+      
+      border-top-color:transparent;
+      border-right-color:transparent;
+      border-bottom-color:transparent;
+      border-left-color:transparent;
+
+   }
+  
+   25%/*x-axis (at top )*/
+   {
+      
+      border-top-color:rgb(247, 157, 171);
+      border-right-color:transparent;
+      border-bottom-color:transparent;
+      border-left-color:transparent;
+
+   }
+   50%/*y-axis(at right)*/
+   {
+      
+      border-top-color:rgb(247, 157, 171);
+      border-right-color:rgb(247, 157, 171);
+      border-bottom-color:transparent;
+      border-left-color:transparent;
+
+   }
+   75%/*x-axis (at bottom )*/
+   {
+     
+      border-top-color:rgb(247, 157, 171);
+      border-right-color:rgb(247, 157, 171);
+      border-bottom-color:rgb(247, 157, 171);
+      border-left-color:transparent;
+
+   }
+   100%/*y-axis (at left )*/
+   {
+    
+      border-top-color:rgb(247, 157, 171);
+      border-right-color:rgb(247, 157, 171);
+      border-bottom-color:rgb(247, 157, 171);
+      border-left-color:rgb(247, 157, 171);
+
+   }
+}
+
+/*position of send button */
+.send_button
+{
+ 
+   text-align:center;
+   margin-top:10%;
+   margin-bottom:10%;
+}
+/*attribute of send button*/
+#size
+{
+   border:none;
+   color:white;
+   font-size:20px;
+   cursor: pointer;
+   border-radius:30px;
+   box-shadow: 0 9px rgb(184, 181, 181);
+   background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+/*when the button is clicked, button will move down 4px vertically*/
+#size:active
+{
+
+   box-shadow: 0 5px rgb(121, 120, 120);
+   transform: translateY(4px);
+}
+/*set the position  of the main container to changes the position of the location box and feedback box */
+div.main
+{
+   
+   display:flex;
+  justify-content: center;
+  column-gap:5%;
+  padding-left:5%;
+  margin-top:2%;
+}
+/*-------------------------------below is the right site box---------------*/
+
+/*attribute of the outtest container*/
+.location
+{
+   width:40%;
+   line-height:20px;
+   text-align: justify;
+   word-spacing: 10px;
+  box-sizing:border-box;
+  border-radius: 50px;
+  box-shadow:5px 5px 20px grey;
+  background-color: rgba(238, 214, 196,0.85);
+  padding:2%;
+  flex-flow: row wrap;
+}
+/*---------------------images slide show ------------*/
+.image_slide{
+   position:relative;
+   width:100%;
+}
+
+.mySlides>img
+{
+   border-radius:10px;
+   opacity:0.8;
+}
+
+.location_map>iframe
+{
+   
+   border-radius:10px;
+   opacity:0.8;
+}
+.mySlides{
+   position:relative;
+   width:100%;
+   text-align:center;
+  
+}
+/*using animation to let the image can changes in fixed time*/
+.fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1s;
+   animation-name: fade;
+   animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+}
+/*animation for changes the image opacity from 0.4 to 1*/
+@keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+}
+/*---------------------slide show ------------*/
+
+/*attribute of  the gradient banner (outer container)*/ 
+.container_outer
+{
+   width:100%;
+   transform:skewY(-4deg);
+   margin-top:5%;
+   margin-bottom:5%;
+   padding-top:1%;
+   padding-bottom:1%;
+   background-color: rgba(216, 160, 216, 0.5);
+}
+/*attribute of  the gradient banner (inner container)*/ 
+.container_inner
+{
+   width:100%;
+   margin-top:0.5%;
+   margin-bottom:0.5%; 
+   padding-top:2%;
+   padding-bottom:2%;
+   background-color: rgb(216, 160, 216);
+   
+}
+/*attribute of the container of two detail boxes*/
+.contact_detail
+{
+   
+   transform:skewY(4deg);/*to let the boxes not display in gradient*/
+   clear:both;
+   content:"";
+   display:table;
+   width:100%;
+   padding-left:28%;
+   
+   
+}
+/*position and width of the two contact boxes*/
+.contact_1,.contact_2
+{
+  
+   cursor:context-menu;
+   float:left;
+   font-size:x-large;
+   border-radius:10%;
+   background-color: crimson;
+   margin-right: 10%;
+    min-width:220px; 
+   
+}
+
+/*when mouse over the two boxes will move up 5px vertically and have shadow*/
+.contact_1:hover,.contact_2:hover
+{
+   box-shadow: 10px 10px 30px grey;
+   transform: translateY(-5px);
+}
+
+
+/*attribute of image whastapp(left)*/
+#whatsapp_image_1
+{
+   position:absolute;
+  top:0;
+  left:15px;
+ 
+   width:50px;
+}
+/*attribute of image whastapp(right)*/
+#whatsapp_image_2
+{
+   position:absolute;
+  top:0;
+  right:15px;
+  
+   width:50px;
+}
+/*attribute of image email(right)*/
+#email_image_1
+{
+   position:absolute;
+  top:0;
+  left:20px;
+ 
+   width:50px;
+}
+/*attribute of image email(left)*/
+#email_image_2
+{
+   position:absolute;
+  top:0;
+  right:20px;
+  
+   width:50px;
+}
+/*set the attribute of the header words and links of the two boxes*/
+h2
+{
+   text-align: center;
+   border-top:transparent;
+   border-right:transparent;
+   border-left:transparent;
+   padding-top:5%;
+   padding-bottom:5%;
+   position:relative;
+   min-height:80px;
+  
+}
+/*position of the information in whatsapp box*/
+#details_1
+{
+   padding-top:15%;
+
+   border-bottom-left-radius:5%;
+   border-bottom-right-radius:5%;
+   background-color: coral;
+   
+   min-height:220px;
+  
+}
+/*position of the information in email box*/
+#details_2
+{
+   padding-top:15%;
+   border-bottom-left-radius:5%;
+   border-bottom-right-radius:5%;
+   background-color: coral;
+ 
+   min-height:220px;
+
+}
+/*replace image (correct) and change the position */ 
+ul.list
+{
+
+   list-style-image:url("../images/Feedback/correct_img.png");
+   list-style-position: inside;
+}
+/*effect of the link when hover,visited and unvisited*/
+#whatsapp:link, #email:link, #whatsapp:visited, #email:visited
+{
+   color:white;
+   text-decoration: none;
+}
+
+#whatsapp:hover,#email:hover
+{
+
+   color:black;
+   text-decoration: underline;
+}
+/*changes position and its size*/
+#paragraph3
+{
+   text-align:center;
+   font-size: 70px;
+}
+/*media query*/
+@media only screen and (max-width:800px){
+   .main
+   {
+      flex-flow:row wrap;
+      
+   }
+   .field
+   {
+      width:100%;
+      margin-bottom: 10%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .location
+   {
+      width:100%;
+      margin-bottom: 5%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   #whatsapp_image_1
+   {
+      position:absolute;
+     top:0;
+     left:15px;
+    
+      width:40px;
+   }
+   #whatsapp_image_2
+   {
+      position:absolute;
+     top:0;
+     right:15px;
+     
+      width:40px;
+   }
+   
+   #email_image_1
+   {
+      position:absolute;
+     top:0;
+     left:20px;
+    
+      width:40px;
+   }
+   #email_image_2
+   {
+      position:absolute;
+     top:0;
+     right:20px;
+     
+      width:40px;
+   }
+}

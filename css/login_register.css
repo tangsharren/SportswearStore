@@ -1,0 +1,146 @@
+/*
+
+  BAIT1023 WEB DESIGN AND DEVELOPMENT        
+  Assignment
+
+  Author: Tang Sharren
+    
+  Filename:  login_register.css
+    
+*/
+.login-page{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url("../images/Login/login-bg1.jpg") ;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    padding: 10% 0 2%;
+    margin: auto;
+}
+.form{
+    position: relative;
+    background: #020624a6;
+    max-width: 450px;
+    margin: 0 auto 100px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+}
+.form strong{
+    color: aliceblue;
+    font-variant: small-caps;
+    letter-spacing: 10px;
+    font-size:2em;
+    display: block;
+    padding-bottom: 20px;
+    text-shadow: 2px 4px 2px #020624a6;
+}
+.form input{
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+.form .btn{
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #1a3972;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 1em;
+    cursor: pointer;
+}
+.form .btn:hover,.form .btn:active{
+    background: #21468b;
+}
+.form .message{
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+.form .message a{
+    color:#7b9cbb;
+    text-decoration: none;
+}
+.form .message a:hover{
+    color:#97bee2;
+    text-decoration: underline;
+}
+/* The message box is shown when the user clicks on the password field */
+#psw-requirements {
+    border-top: 1px solid white;
+    display:none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+  
+#psw-requirements p {
+    padding: 10px 0px 10px 35px;
+    font-size: 18px;
+    text-align: left;
+}
+#psw-requirements strong{
+    font-size: 1.1em;
+}
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+  
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+  
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+  
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+@media screen and (max-width: 800px) {
+    .login-page{
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url("../images/Login/login-bg2.jpg") ;
+    }
+    .form{
+        padding: 10%;
+        background: none;
+    }
+    .form strong{
+        font-size:3vh;
+    }
+    .form input{
+        padding: 4%;
+        font-size: 2.2vh;
+    }
+    .form .btn,.form .message{
+        font-size: 2vh;
+    }
+    #psw-requirements p {
+        padding: 10px 0px 0px 35px;
+        font-size: 2vh;
+    }
+    #psw-requirements strong{
+        font-size: 2.5vh;
+    }
+    #psw-requirements {
+        padding: 10px;
+    }
+}

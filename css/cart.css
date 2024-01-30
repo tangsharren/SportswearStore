@@ -1,0 +1,265 @@
+/*
+
+  BAIT1023 WEB DESIGN AND DEVELOPMENT        
+  Assignment
+
+  -------Desktop View-------
+  Author: Eunice Teh Pei Yeen
+
+  -------Mobile View--------
+  Author: Eunice Teh Pei Yeen
+          Wong Yann Yiee
+    
+  Filename:   cart.css
+    
+*/
+
+@font-face {
+  font-family: Oswald-Bold;
+  src: url("../fonts/Oswald-Bold.ttf") format("truetype");
+}
+
+/* Body Styles */
+h1,
+div.product-container,
+hr {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+/* H1 ans center Styles */
+h1 {
+  color: rgb(61, 44, 141);
+  font-family: Oswald-Bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+center {
+  padding: 50px;
+}
+
+/*remove button*/
+.removebtn {
+  font-size: 25px;
+  color: red;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/* Container Width */
+.container {
+  max-width: 1100px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* cart styles */
+.cart-header {
+  display: flex;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+  background-color: rgba(216, 182, 255, 0.205);
+  padding-left: 30px;
+}
+
+.cart-item {
+  display: flex;
+  width: 45%;
+}
+
+.cart-price {
+  display: flex;
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  display: flex;
+  width: 35%;
+}
+
+.carttitle {
+  display: flex;
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+.cartimage {
+  display: flex;
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cart-qty-input {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  width: 50px;
+  color: #333;
+  padding: 0;
+  font-size: 1.2em;
+  margin-left: 50px;
+  margin-right: 47px;
+}
+
+/* Grand total styles */
+.gtt-column {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5em;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.grandTotalContainer {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(176, 196, 222);
+}
+
+.grandTotalTitle {
+  display: flex;
+  justify-content: flex-start;
+  width: 28%;
+  margin-left: 3.5%;
+  font-size: 20px;
+}
+
+.grandTotal {
+  display: flex;
+  justify-content: flex-end;
+  width: 24%;
+  font-size: 20px;
+}
+
+/* button styles */
+.button2 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: rgb(15, 44, 103);
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  bottom: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom:0.5%;
+}
+
+.button2-1 {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 0;
+  color: white;
+  border-radius: 10px;
+}
+
+.button2-1:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.button2-1:hover {
+  color: rgb(0, 0, 0);
+}
+
+.button2-1:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+
+/*Media Querry*/
+
+@media only screen and (max-width: 616px) {
+  .cart-row {
+    border-bottom: 1px solid black;
+  }
+
+  .cart-column {
+    width: 100%;
+    border-bottom: none;
+
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .cart-header {
+    display: none;
+  }
+
+  span.carttitle::before {
+    content: "Product: ";
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  span.cart-price::before {
+    content: "Price:";
+    margin-right: 36px;
+    font-weight: bold;
+  }
+  div.cart-quantity::before {
+    content: "Qty: ";
+    font-weight: bold;
+  }
+  .cart-row {
+    flex-flow: column wrap;
+  }
+  .carttitle {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .grandTotalTitle {
+    position: relative;
+  }
+  .cart-item {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .grandTotal {
+    position: relative;
+  }
+
+  .removebtn {
+    margin-left: 90px;
+  }
+}
+.button2{
+  margin-bottom:18.5%;
+}

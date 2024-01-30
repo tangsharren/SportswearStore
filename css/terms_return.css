@@ -1,0 +1,78 @@
+/*
+
+  BAIT1023 WEB DESIGN AND DEVELOPMENT        
+  Assignment
+
+  Author: Tang Sharren
+    
+  Filename:  terms_return.css
+    
+*/
+
+body{
+    background-color:rgb(238, 238, 238);
+}
+.return-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.return-title{
+    color:rgb(31, 74, 99);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 35px;
+    min-height: 140px;
+}
+.return-title h1{  
+    font-size: 2.8rem;
+}
+.return-title p{
+    font-size: 1.3rem;
+    max-width: max-content;
+    margin: 10px auto;
+    color:rgb(82, 97, 129);
+}
+.return-innercontainer {
+    position:relative;
+    padding: 30px 20px;
+    max-height: max-content;
+}
+.return-innercontainer>.return-section{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 5vh;
+    color: rgb(31, 74, 99);
+    font-weight: bold;
+    
+}
+.content p{
+    padding: 0px 18px;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    font-size: 1.3em;
+    line-height: 2em;
+    font-weight: 400;
+    color: rgb(78, 94, 105);
+}
+@media screen and (max-width: 800px) {
+    .return-title{
+       padding-top: 5vh;
+       min-height: fit-content;
+    }
+    .return-title h1{  
+        font-size: 6vw;
+    }
+    .return-title p {
+        font-size: 2.8vw;
+    }
+    .content p{
+        font-size: 2.8vw;
+    }
+    .return-innercontainer>.return-section{
+        font-size: 2.9vw;
+        line-height: 2.5vh;
+    }
+}

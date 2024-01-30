@@ -1,0 +1,88 @@
+@charset "utf-8";
+/*
+
+  BAIT1023 WEB DESIGN AND DEVELOPMENT        
+  Assignment
+
+  Author: Wong Yann Yiee
+    
+  Filename:  send_feedback.css
+    
+*/
+
+/*attribute for whole body*/
+body{
+    
+    background-color:rgb(255, 160, 122);
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*use animation property to let the thankypu message be blinking*/ 
+h1{
+    font-style: oblique;
+    font-size:50px;
+    text-align:center;
+    animation:my_blink .75s infinite;
+}
+/*attribute for the thankyou message*/
+.thankyou
+{
+    margin-top:10%;
+  
+}
+
+/*attribute for the thankyou gif */
+.gif_thankyou{
+    margin-top:2%;
+
+   
+}
+/*attribute for the word's inside the button*/
+#button_back
+{
+    text-decoration: none;
+    font-size: 25px;
+}
+/*attribute for the button and let the button have a shadow */
+.back{
+    margin-top: 2%;
+    margin-bottom:3%;
+    border-radius:5px;
+     border:none;
+   color:white;
+   
+   cursor: pointer;/*be pointer when mouse over the button*/
+
+     
+   box-shadow: 0 9px rgb(184, 181, 181);
+   background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+
+/*when click the button, the button will move down 4px vertically*/
+.back:active
+{
+
+   box-shadow: 0 5px rgb(121, 120, 120);
+   transform: translateY(4px);
+}
+
+/*animation for the blink effect,change color from white to red*/
+@keyframes my_blink{
+    from{color:white;}
+    to{color:red;}
+}
+
+/*media query*/
+@media only screen and (max-width:600px){
+    .gif_thankyou{
+        width:50%;
+        margin-top:50%;
+    }
+    .thankyou{
+        position:relative;
+        top:-100px;
+        left:5%;
+        right:5%;
+      }
+}

@@ -1,0 +1,78 @@
+/*
+
+  BAIT1023 WEB DESIGN AND DEVELOPMENT        
+  Assignment
+
+  Author: Sharren
+    
+  Filename:  footer.css
+    
+*/
+footer a:hover {
+    cursor: pointer;
+}
+footer{
+    font-family:  'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    background-color: #020624e8;
+    overflow: auto;
+    line-height: 2em;
+    min-height: fit-content;
+}
+/*added*/
+a [alt="footer logo"]{
+    height: 100px; 
+    padding: 20px 0px 20px 45px; 
+}
+.footer-content img{
+    width: 30%;
+}
+.footer-title{
+    font-size:1.5vw;
+    text-decoration: none;
+    color:rgba(241, 239, 239, 0.733);
+    font-variant: small-caps;
+    text-shadow:  2px 2px 2px #999;
+}
+.footer-content {
+    float: left;
+    width: 25%;
+    padding:20px 50px;
+}
+.footer-content ul{
+    font-size: 1.2vw;
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+    color:rgb(140, 145, 165);
+}
+.copyright{
+    float: inline-end;
+    clear: both;
+    text-align: center;
+    color:rgb(140, 145, 165);
+    font-size: smaller;
+}
+footer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-width: 800px) {
+    .footer-title{
+        font-size:3vw;
+    }
+    .footer-content {
+        width: 50%;
+        padding:2.5% 10%;
+        line-height: 4vh;
+        padding:3vw 3vw 3vw 8vw;
+    }
+    .footer-content ul{
+        font-size: 2.5vw;
+    }
+    .footer-content img{
+        width: 20%;
+    }
+    
+}
